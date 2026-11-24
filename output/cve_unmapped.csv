@@ -1,0 +1,12 @@
+cve,reason
+CVE-2016-5195,"No CAPEC ATT&CK taxonomy reference, direct or inherited"
+CVE-2017-0144,NVD has no numeric CWE assignment (or marks it as Other/noinfo)
+CVE-2017-5638,No CAPEC related-weakness cross-reference for this CWE
+CVE-2018-15473,"No CAPEC ATT&CK taxonomy reference, direct or inherited"
+CVE-2019-0708,No CAPEC related-weakness cross-reference for this CWE
+CVE-2020-1472,NVD has no numeric CWE assignment (or marks it as Other/noinfo)
+CVE-2021-3156,No CAPEC related-weakness cross-reference for this CWE
+CVE-2021-34527,NVD has no numeric CWE assignment (or marks it as Other/noinfo)
+CVE-2021-4034,"No CAPEC ATT&CK taxonomy reference, direct or inherited | No CAPEC related-weakness cross-reference for this CWE"
+CVE-2022-0847,"No CAPEC ATT&CK taxonomy reference, direct or inherited"
+CVE-2022-26134,No CAPEC related-weakness cross-reference for this CWE

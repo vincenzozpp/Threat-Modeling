@@ -1,0 +1,6 @@
+{
+  "python": "3.13.5",
+  "networkx": "3.6.1",
+  "matplotlib": "3.10.8",
+  "graphviz_dot": "dot - graphviz version 2.42.4 (0)"
+}

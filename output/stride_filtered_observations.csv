@@ -1,0 +1,9 @@
+element,reason,reference
+service:H09:polkit:0,local-only CVE without a modeled way to establish a host foothold,CVE-2021-4034
+flow:F5,cannot substantiate executable data flow: MISSING_DECLARED_SERVICE,F5
+flow:F6,cannot substantiate executable data flow: MISSING_DECLARED_SERVICE,F6
+flow:F7,cannot substantiate executable data flow: MISSING_DECLARED_SERVICE,F7
+trust:T2,no matching permitted destination service for stated trust type,T2
+trust:T3,no matching permitted destination service for stated trust type,T3
+trust:T4,no matching permitted destination service for stated trust type,T4
+trust:T8,no matching permitted destination service for stated trust type,T8

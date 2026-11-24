@@ -1,0 +1,19 @@
+mitigation,name,type,cost_euros,paths_broken,single_action_risk_reduction,risk_reduction_per_euro
+M01,Patch Apache httpd on H01,patch,4000,0,0.0,0.0
+M02,Patch Exchange on H03,patch,9000,0,0.0,0.0
+M03,Patch Pulse Secure on H04,patch,6000,906,0.0,0.0
+M04,"Retire vsftpd, move to SFTP on H05",patch,3000,0,0.0,0.0
+M05,Patch Windows 7 workstations (upgrade to Windows 10),patch,25000,4638,0.0,0.0
+M06,Patch Struts on H17,patch,5000,3468,0.0,0.0
+M07,Patch Zerologon and enforce secure channel on H13,patch,3000,5670,1.35,0.00045
+M08,"Patch Linux local privilege escalations (polkit, sudo) fleet-wide",patch,8000,0,0.0,0.0
+M09,Upgrade MySQL and kernel on H20,patch,15000,0,0.0,0.0
+M10,"Block direct DMZ to DB flow (H01 to H20), route via application tier",block_flow,12000,0,0.0,0.0
+M11,Segment corp-lan from server-lan (allow only AD and file services),block_flow,30000,3210,0.0,0.0
+M12,"Remove cached domain-admin credentials from H11 (tiered admin model, LAPS)",remove_trust,10000,0,0.0,0.0
+M13,Restrict VPN pool: block H04 to corp-lan except required ports,block_flow,7000,906,0.0,0.0
+M14,Deploy EDR on all servers (halves exploit success: x2 mean time to attack),scale_time,45000,0,0.675,1.5e-05
+M15,Patch Grafana and Confluence,patch,4000,3468,0.0,0.0
+M16,Rotate default printer password,fix_misconfig,200,2558,0.0,0.0
+M17,Disable SSH password login and enable lockout on H26,fix_misconfig,500,2532,0.0,0.0
+M18,"Full network IDS (detection only, no effect on path feasibility)",detect_only,60000,0,0.0,0.0

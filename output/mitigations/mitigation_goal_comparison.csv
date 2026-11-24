@@ -1,0 +1,31 @@
+plan,scenario,goal,goal_max_across_scenarios,path_count,max_path_risk,min_mtao_hours
+Baseline,S1,G1,0.3645,75,0.013122,75.556
+Baseline,S1,G2,1.35,906,0.0486,64.074
+Baseline,S1,G3,0.0,0,0.0,
+Baseline,S2,G1,0.3645,853,0.3645,18.889
+Baseline,S2,G2,1.35,4764,1.35,7.407
+Baseline,S2,G3,0.0,0,0.0,
+Greedy 30%,S1,G1,0.0,0,0.0,
+Greedy 30%,S1,G2,0.0,0,0.0,
+Greedy 30%,S1,G3,0.0,0,0.0,
+Greedy 30%,S2,G1,0.0,0,0.0,
+Greedy 30%,S2,G2,0.0,0,0.0,
+Greedy 30%,S2,G3,0.0,0,0.0,
+Exact 30%,S1,G1,0.0,0,0.0,
+Exact 30%,S1,G2,0.0,0,0.0,
+Exact 30%,S1,G3,0.0,0,0.0,
+Exact 30%,S2,G1,0.0,0,0.0,
+Exact 30%,S2,G2,0.0,0,0.0,
+Exact 30%,S2,G3,0.0,0,0.0,
+Greedy 60%,S1,G1,0.0,0,0.0,
+Greedy 60%,S1,G2,0.0,0,0.0,
+Greedy 60%,S1,G3,0.0,0,0.0,
+Greedy 60%,S2,G1,0.0,0,0.0,
+Greedy 60%,S2,G2,0.0,0,0.0,
+Greedy 60%,S2,G3,0.0,0,0.0,
+Exact 60%,S1,G1,0.0,0,0.0,
+Exact 60%,S1,G2,0.0,0,0.0,
+Exact 60%,S1,G3,0.0,0,0.0,
+Exact 60%,S2,G1,0.0,0,0.0,
+Exact 60%,S2,G2,0.0,0,0.0,
+Exact 60%,S2,G3,0.0,0,0.0,

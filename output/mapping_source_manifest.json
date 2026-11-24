@@ -1,0 +1,180 @@
+{
+  "downloaded_utc": "2026-11-23T18:14:07.266222+00:00",
+  "versions": {
+    "CAPEC": "3.9",
+    "Enterprise ATT&CK": "20.1",
+    "NVD API": "2.0"
+  },
+  "capec_patterns_loaded": 559,
+  "attack_active_techniques_loaded": 706,
+  "sources": [
+    {
+      "name": "CAPEC",
+      "version": "3.9",
+      "url": "https://capec.mitre.org/data/xml/capec_v3.9.xml",
+      "file": "data/threat_libraries/capec_v3.9.xml",
+      "sha256": "70279a2dff0cb0ad79e546adb07828335a704ad5210e047e09e986172fc9e34d"
+    },
+    {
+      "name": "Enterprise ATT&CK",
+      "version": "20.1",
+      "url": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack-20.1.json",
+      "file": "data/threat_libraries/enterprise-attack-20.1.json",
+      "sha256": "539a843a7b53ed9749740b2123dddae3726b1a4831841c32aca740b011b910b5"
+    },
+    {
+      "name": "CVE-2011-2523",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2011-2523",
+      "file": "data/threat_libraries/nvd/CVE-2011-2523.json",
+      "sha256": "7100738302eab9aefd6d7fc453f451b3d579319031935c4c6a67358c556e0437"
+    },
+    {
+      "name": "CVE-2012-2122",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2012-2122",
+      "file": "data/threat_libraries/nvd/CVE-2012-2122.json",
+      "sha256": "31b2ddf9a8a57e0f8384a879ffee4757be9e2be1a829072455b576294b142c36"
+    },
+    {
+      "name": "CVE-2016-5195",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2016-5195",
+      "file": "data/threat_libraries/nvd/CVE-2016-5195.json",
+      "sha256": "6099c0550469e3e656472d7f9ace6c779eb1c9fda352dd02afc103a669cb3fc1"
+    },
+    {
+      "name": "CVE-2017-0144",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-0144",
+      "file": "data/threat_libraries/nvd/CVE-2017-0144.json",
+      "sha256": "f9465eb41c1b22bc2bcaabaa6423f7f755e483827e9eb737cba3de11083f7d9d"
+    },
+    {
+      "name": "CVE-2017-5638",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-5638",
+      "file": "data/threat_libraries/nvd/CVE-2017-5638.json",
+      "sha256": "7dc5fe55a54c5f25fb67ae5207b78ede765c6a98d11c346d2c6750d73a748b90"
+    },
+    {
+      "name": "CVE-2017-7494",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2017-7494",
+      "file": "data/threat_libraries/nvd/CVE-2017-7494.json",
+      "sha256": "d33c16e10f13e8d64153f2bdc4c97661f1664c110a8ed194f70a21e93583b1ad"
+    },
+    {
+      "name": "CVE-2018-15473",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2018-15473",
+      "file": "data/threat_libraries/nvd/CVE-2018-15473.json",
+      "sha256": "962cdc49dc4d14f31e89286490467194a9f3148c45511b1fde5a3e9069587908"
+    },
+    {
+      "name": "CVE-2018-7600",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2018-7600",
+      "file": "data/threat_libraries/nvd/CVE-2018-7600.json",
+      "sha256": "0ac6065dbafdfe6967d8d7076838e6fd1338eff738be4673c70e5f2f92d70489"
+    },
+    {
+      "name": "CVE-2019-0708",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2019-0708",
+      "file": "data/threat_libraries/nvd/CVE-2019-0708.json",
+      "sha256": "865fadcc010490924873e395ecb60c84e5aee32d0c9758f4e03efda2601d6993"
+    },
+    {
+      "name": "CVE-2019-11510",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2019-11510",
+      "file": "data/threat_libraries/nvd/CVE-2019-11510.json",
+      "sha256": "adb71eb542296758a413d5f7b23e1766ba6deee0bd09d6246cc2cedafb6202a1"
+    },
+    {
+      "name": "CVE-2020-1472",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2020-1472",
+      "file": "data/threat_libraries/nvd/CVE-2020-1472.json",
+      "sha256": "50e576dfa9fee30a7f7b571f827740d99ae5e29333783ae83ebe60a44f1897ca"
+    },
+    {
+      "name": "CVE-2021-22205",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2021-22205",
+      "file": "data/threat_libraries/nvd/CVE-2021-22205.json",
+      "sha256": "7a503c3ae64e380f3166d6047c1a06017ee0bfe7488aa36b04d263aba82ee552"
+    },
+    {
+      "name": "CVE-2021-26855",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2021-26855",
+      "file": "data/threat_libraries/nvd/CVE-2021-26855.json",
+      "sha256": "be0345ba74a4fb87cbef84e8ed51ff63a92752fabd5debdc15b3d1bd97bd6304"
+    },
+    {
+      "name": "CVE-2021-3156",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2021-3156",
+      "file": "data/threat_libraries/nvd/CVE-2021-3156.json",
+      "sha256": "aa17826647b4f8c75e147a32821d6b0e2c204cff0cca17c5de6890a8c4df1567"
+    },
+    {
+      "name": "CVE-2021-34527",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2021-34527",
+      "file": "data/threat_libraries/nvd/CVE-2021-34527.json",
+      "sha256": "c1fba1f28138bf0fe2eeffa4a6b188bf9c3d83f6ded246e2f596941a2c2c0f4d"
+    },
+    {
+      "name": "CVE-2021-4034",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2021-4034",
+      "file": "data/threat_libraries/nvd/CVE-2021-4034.json",
+      "sha256": "dd64fd68fe9d4a46d90ada2a6a6c613c87d70e2c51dcc065a84388390aa30dfb"
+    },
+    {
+      "name": "CVE-2021-41773",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2021-41773",
+      "file": "data/threat_libraries/nvd/CVE-2021-41773.json",
+      "sha256": "d66902996d9524abcbed7b4311b183eae78b0792416aa156772863f918c3d204"
+    },
+    {
+      "name": "CVE-2021-43798",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2021-43798",
+      "file": "data/threat_libraries/nvd/CVE-2021-43798.json",
+      "sha256": "066f04c1893758d9a3a06b215efbecc9bc51582e31c081a6e7bfb6b9f80d9acb"
+    },
+    {
+      "name": "CVE-2021-44228",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2021-44228",
+      "file": "data/threat_libraries/nvd/CVE-2021-44228.json",
+      "sha256": "5b186325d5ed6948bbf61d928699b08d5fa09a3b0d1d3ff1a18203737b11c841"
+    },
+    {
+      "name": "CVE-2022-0847",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2022-0847",
+      "file": "data/threat_libraries/nvd/CVE-2022-0847.json",
+      "sha256": "f3cc2e2f8ffcdaabb79fc50bbf888d042f112b3d634af5e19fb86599d98c07c2"
+    },
+    {
+      "name": "CVE-2022-22965",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2022-22965",
+      "file": "data/threat_libraries/nvd/CVE-2022-22965.json",
+      "sha256": "732cc1a3821021d3ad8b75b5726ed97f13a7a1893fde4a4673affb5bcd5714c9"
+    },
+    {
+      "name": "CVE-2022-26134",
+      "version": "NVD CVE API 2.0 snapshot",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2022-26134",
+      "file": "data/threat_libraries/nvd/CVE-2022-26134.json",
+      "sha256": "d794b661eb1a57334384eb6984a5062d9d81e50d6796ff53886cb38540b46412"
+    }
+  ]
+}

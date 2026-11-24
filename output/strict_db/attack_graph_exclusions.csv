@@ -1,0 +1,13 @@
+host,cve,reason
+H01,CVE-2021-41773,Apache path traversal; CGI RCE prerequisite not declared
+H03,CVE-2021-26855,Exchange SSRF; companion vulnerabilities needed for a full RCE chain
+H04,CVE-2019-11510,"VPN arbitrary file read, NOT host shell (handled as conditional VPN session)"
+H10,CVE-2021-34527,Print Spooler RCE prerequisites/permissions not evidenced in network.json
+H20,CVE-2012-2122,"MySQL authentication bypass gives DB access, NOT an OS shell"
+H26,CVE-2018-15473,"OpenSSH user enumeration, NOT host access"
+H27,CVE-2021-43798,"Grafana file read, NOT host shell"
+H20,T2,Trust H26->H20 lacks reachable destination ssh listener
+H21,T3,Trust H18->H21 lacks reachable destination ssh listener
+H17,T4,Trust H16->H17 lacks reachable destination ssh listener
+H26,T8,Trust H13->H26 lacks reachable destination smb listener
+H20,T9,Strict DB model: MySQL credentials do not confer target OS shell

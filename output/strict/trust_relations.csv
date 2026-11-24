@@ -1,0 +1,10 @@
+id,from_host,to_host,type,grants,requires
+T1,H26,H18,ssh-key,user,
+T2,H26,H20,ssh-key,user,
+T3,H18,H21,backup-agent-credentials,user,
+T4,H16,H17,ci-deploy-key,user,
+T5,H25,H16,runner-token,user,
+T6,H11,H13,cached-domain-admin-credentials,root,root on source
+T7,H13,H14,domain-admin,root,root on source
+T8,H13,H26,domain-admin,root,root on source
+T9,H17,H20,db-credentials-in-config,user,user on source

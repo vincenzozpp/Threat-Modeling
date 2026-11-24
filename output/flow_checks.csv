@@ -1,0 +1,11 @@
+flow_id,src,dst,protocol,dst_ports,status,basis
+F1,ext-customer,H01,HTTPS,443,REACHABLE,explicit-allow
+F2,H01,H17,HTTP,8080,REACHABLE,explicit-allow
+F3,H17,H20,MySQL,3306,REACHABLE,explicit-allow
+F4,H17,H21,PostgreSQL,5432,REACHABLE,explicit-allow
+F5,H18,H20,SSH,,MISSING_DECLARED_SERVICE,
+F6,H18,H21,SSH,,MISSING_DECLARED_SERVICE,
+F7,H18,H22,SSH,,MISSING_DECLARED_SERVICE,
+F8,ext-partner,H05,FTP,21,REACHABLE,explicit-allow
+F9,ext-employee,H04,HTTPS,443,REACHABLE,explicit-allow
+F10,H19,H27,HTTP,3000,REACHABLE,explicit-allow

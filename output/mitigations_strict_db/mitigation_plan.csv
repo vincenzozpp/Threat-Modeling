@@ -1,0 +1,6 @@
+plan,method,budget_euros,spent_euros,selected_ids,objective_risk,risk_reduction_pct,surviving_paths,attack_edges
+Baseline,none,0,0,,1.35,0.0,5670,241
+Greedy 30%,Greedy,74010,3000,M07,0.0,100.0,0,215
+Exact 30%,Exact,74010,3000,M07,0.0,100.0,0,215
+Greedy 60%,Greedy,148020,3000,M07,0.0,100.0,0,215
+Exact 60%,Exact,148020,3000,M07,0.0,100.0,0,215

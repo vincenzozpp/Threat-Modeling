@@ -1,0 +1,85 @@
+{
+  "nodes": 56,
+  "edges": 241,
+  "scenarios": 2,
+  "goals": 3,
+  "max_hops": 7,
+  "max_paths_per_pair": 10000,
+  "same_zone_policy": "allow",
+  "strict_db": true,
+  "paths_total": 5670,
+  "goal_summaries": [
+    {
+      "scenario": "S1",
+      "goal": "G1",
+      "path_count": 0,
+      "max_path_risk": 0,
+      "min_mtao_hours": null,
+      "computation_seconds": 0.021375,
+      "cap_hit": false,
+      "completeness": "ALL_SIMPLE_PATHS_WITHIN_7_HOPS"
+    },
+    {
+      "scenario": "S1",
+      "goal": "G2",
+      "path_count": 906,
+      "max_path_risk": 0.0486,
+      "min_mtao_hours": 64.074,
+      "computation_seconds": 0.009704,
+      "cap_hit": false,
+      "completeness": "ALL_SIMPLE_PATHS_WITHIN_7_HOPS"
+    },
+    {
+      "scenario": "S1",
+      "goal": "G3",
+      "path_count": 0,
+      "max_path_risk": 0,
+      "min_mtao_hours": null,
+      "computation_seconds": 0.020048,
+      "cap_hit": false,
+      "completeness": "ALL_SIMPLE_PATHS_WITHIN_7_HOPS"
+    },
+    {
+      "scenario": "S2",
+      "goal": "G1",
+      "path_count": 0,
+      "max_path_risk": 0,
+      "min_mtao_hours": null,
+      "computation_seconds": 0.182913,
+      "cap_hit": false,
+      "completeness": "ALL_SIMPLE_PATHS_WITHIN_7_HOPS"
+    },
+    {
+      "scenario": "S2",
+      "goal": "G2",
+      "path_count": 4764,
+      "max_path_risk": 1.35,
+      "min_mtao_hours": 7.407,
+      "computation_seconds": 0.071744,
+      "cap_hit": false,
+      "completeness": "ALL_SIMPLE_PATHS_WITHIN_7_HOPS"
+    },
+    {
+      "scenario": "S2",
+      "goal": "G3",
+      "path_count": 0,
+      "max_path_risk": 0,
+      "min_mtao_hours": null,
+      "computation_seconds": 0.249943,
+      "cap_hit": false,
+      "completeness": "ALL_SIMPLE_PATHS_WITHIN_7_HOPS"
+    }
+  ],
+  "risk_definition": "max path risk per goal = max(path likelihood \u00d7 target impact 1..5)",
+  "likelihood_definition": "product of independent per-step, conditional heuristic probabilities",
+  "mtao_definition": "sum(step attempt-hours / per-attempt success probability), geometric retry approximation",
+  "limitations": [
+    "Each scenario uses a single attacker vantage/state, not arbitrary compound multi-host preconditions.",
+    "Complete only within max_hops and only if cap_hit=false; no all-length exhaustiveness claim.",
+    "Probability/time priors are educational assumptions, not empirical CVSS-derived estimates.",
+    "Trust T9 grants target host user under explicit JSON privilege abstraction; --strict-db removes this unproven OS equivalence.",
+    "Some exploit prerequisites are not declared in network.json; modeled edges remain conditional.",
+    "Missing services/credentials are not invented (e.g. T3 to H21 via SSH).",
+    "An unreachable goal is not proof of security, only lack of a supported chain in the model."
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "methodology": "Exact enumeration of 2^18 mitigation subsets using max-over-submasks DP for bounded attack paths",
+  "baseline_risk": 1.35,
+  "risk_objective": "sum over G1,G2,G3 of max across S1,S2 and bounded paths (path likelihood × goal criticality)",
+  "max_hops": 7,
+  "max_paths_per_pair": 10000,
+  "strict_db": true,
+  "same_zone_policy": "allow",
+  "total_mitigation_cost": 246700,
+  "budget_comparisons": [
+    {
+      "budget_percent": 30,
+      "budget_euros": 74010,
+      "greedy_ids": [
+        "M07"
+      ],
+      "exact_ids": [
+        "M07"
+      ],
+      "greedy_cost": 3000,
+      "exact_cost": 3000,
+      "greedy_objective": 0.0,
+      "exact_objective": 0.0,
+      "feasible_subsets": 39000,
+      "search_space": 262144
+    },
+    {
+      "budget_percent": 60,
+      "budget_euros": 148020,
+      "greedy_ids": [
+        "M07"
+      ],
+      "exact_ids": [
+        "M07"
+      ],
+      "greedy_cost": 3000,
+      "exact_cost": 3000,
+      "greedy_objective": 0.0,
+      "exact_objective": 0.0,
+      "feasible_subsets": 182771,
+      "search_space": 262144
+    }
+  ],
+  "plans": [
+    {
+      "name": "Baseline",
+      "method": "none",
+      "budget": 0,
+      "ids": [],
+      "spent": 0,
+      "objective": 1.35,
+      "goal_risks": {
+        "G1": 0.0,
+        "G2": 1.35,
+        "G3": 0.0
+      },
+      "paths": 5670,
+      "nodes": 56,
+      "edges": 241,
+      "computation_seconds": 0.441294,
+      "risk_reduction_percent": 0.0
+    },
+    {
+      "ids": [
+        "M07"
+      ],
+      "spent": 3000,
+      "objective": 0.0,
+      "goal_risks": {
+        "G1": 0.0,
+        "G2": 0.0,
+        "G3": 0.0
+      },
+      "paths": 0,
+      "nodes": 56,
+      "edges": 215,
+      "computation_seconds": 0.162562,
+      "name": "Greedy 30%",
+      "method": "Greedy",
+      "budget": 74010,
+      "risk_reduction_percent": 100.0
+    },
+    {
+      "ids": [
+        "M07"
+      ],
+      "spent": 3000,
+      "objective": 0.0,
+      "goal_risks": {
+        "G1": 0.0,
+        "G2": 0.0,
+        "G3": 0.0
+      },
+      "paths": 0,
+      "nodes": 56,
+      "edges": 215,
+      "computation_seconds": 0.135565,
+      "name": "Exact 30%",
+      "method": "Exact",
+      "budget": 74010,
+      "risk_reduction_percent": 100.0
+    },
+    {
+      "ids": [
+        "M07"
+      ],
+      "spent": 3000,
+      "objective": 0.0,
+      "goal_risks": {
+        "G1": 0.0,
+        "G2": 0.0,
+        "G3": 0.0
+      },
+      "paths": 0,
+      "nodes": 56,
+      "edges": 215,
+      "computation_seconds": 0.133573,
+      "name": "Greedy 60%",
+      "method": "Greedy",
+      "budget": 148020,
+      "risk_reduction_percent": 100.0
+    },
+    {
+      "ids": [
+        "M07"
+      ],
+      "spent": 3000,
+      "objective": 0.0,
+      "goal_risks": {
+        "G1": 0.0,
+        "G2": 0.0,
+        "G3": 0.0
+      },
+      "paths": 0,
+      "nodes": 56,
+      "edges": 215,
+      "computation_seconds": 0.151177,
+      "name": "Exact 60%",
+      "method": "Exact",
+      "budget": 148020,
+      "risk_reduction_percent": 100.0
+    }
+  ],
+  "critical_transition": {
+    "source": "H19:user",
+    "destination": "H13:root",
+    "key": "H19:user:H13:CVE-2020-1472",
+    "mechanism": "remote-cve",
+    "reference": "CVE-2020-1472",
+    "paths_using_edge": 1286
+  },
+  "critical_reference": {
+    "reference": "CVE-2020-1472",
+    "paths_containing_reference": 5670
+  },
+  "most_paths_broken_by_single_mitigation": {
+    "mitigation": "M07",
+    "name": "Patch Zerologon and enforce secure channel on H13",
+    "type": "patch",
+    "cost_euros": 3000,
+    "paths_broken": 5670,
+    "single_action_risk_reduction": 1.35,
+    "risk_reduction_per_euro": 0.00045
+  },
+  "stride_candidates_before": 40,
+  "stride_candidates_after_exact_60pct": 39,
+  "residual_stride_candidates_listed": 39,
+  "execution_seconds": 3.566,
+  "baseline_simple_paths_total": 5670,
+  "limitations": [
+    "Optimization is exact only for enumerated simple paths <=max_hops; never an unbounded-graph guarantee.",
+    "Only conditional educational per-step success priors, not empirical probabilities or real loss euros.",
+    "EDR M14 applied per JSON scope all-hosts and interpreted as p/2 for remote/local CVE and credential-CVE steps; step MTAO t/p doubles, not necessarily whole-path MTAO.",
+    "M18 IDS is detection-only: costs money and does not reduce modeled likelihood or feasibility. Operational benefit excluded from this objective.",
+    "M12 removes T6,T9,T4 as encoded in the JSON despite its narrower human-readable name.",
+    "G3 has no bounded modeled paths; zero risk is an evidence/model gap, not proof of safety.",
+    "The default T9 MySQL-credentials-as-OS-user assumption is fragile; compare --strict-db.",
+    "STRIDE residual threat listing reflects inventory changes, not proven elimination of attack opportunities.",
+    "Greedy can stall when two complementary mitigations jointly remove all dominating paths.",
+    "Impact is unchanged because input provides no impact-reduction mitigation; maximum path risk is not additive across attackers."
+  ]
+}

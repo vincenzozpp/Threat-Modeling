@@ -1,0 +1,25 @@
+{
+  "threats": 40,
+  "by_stride": {
+    "Denial of Service": 2,
+    "Elevation of Privilege": 20,
+    "Information Disclosure": 8,
+    "Repudiation": 1,
+    "Spoofing": 6,
+    "Tampering": 3
+  },
+  "by_feasibility": {
+    "conditional-on-log-server-compromise": 1,
+    "conditional-on-network-position": 6,
+    "conditional-on-source-compromise-and-valid-credential": 5,
+    "conditional-on-web-tier-compromise-and-DB-authorization": 1,
+    "direct-entry-reachable; authentication-conditional": 2,
+    "direct-entry-reachable; exploit-conditional": 12,
+    "exposed-service; resource-threshold-unknown": 2,
+    "lateral-foothold-required; exploit-conditional": 6,
+    "requires-local-user-foothold": 5
+  },
+  "filtered_observations": 8,
+  "same_zone_policy": "allow",
+  "warning": "Candidate threat inventory, not confirmed exploitability or numerical risk; validate CVEs with NVD in Task 3 and attack prerequisites in Task 4."
+}

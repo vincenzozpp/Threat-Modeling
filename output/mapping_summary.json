@@ -1,0 +1,40 @@
+{
+  "unique_cves_total": 22,
+  "unique_cves_mapped": 11,
+  "coverage_percent": 50.0,
+  "unmapped_cves": [
+    "CVE-2016-5195",
+    "CVE-2017-0144",
+    "CVE-2017-5638",
+    "CVE-2018-15473",
+    "CVE-2019-0708",
+    "CVE-2020-1472",
+    "CVE-2021-3156",
+    "CVE-2021-34527",
+    "CVE-2021-4034",
+    "CVE-2022-0847",
+    "CVE-2022-26134"
+  ],
+  "host_cve_occurrences": 24,
+  "mapped_occurrences": 11,
+  "mapping_table_rows": 185,
+  "misconfiguration_table_rows": 5,
+  "tactic_distinct_technique_counts": {
+    "reconnaissance": 0,
+    "resource-development": 0,
+    "initial-access": 0,
+    "execution": 2,
+    "persistence": 1,
+    "privilege-escalation": 2,
+    "defense-evasion": 0,
+    "credential-access": 3,
+    "discovery": 2,
+    "lateral-movement": 2,
+    "collection": 2,
+    "command-and-control": 0,
+    "exfiltration": 0,
+    "impact": 4
+  },
+  "mapping_rule": "CVE -> NVD weaknesses CWE -> CAPEC Related_Weakness CWE_ID -> CAPEC ATTACK taxonomy Entry_ID (direct, else nearest ancestor) -> active Enterprise STIX technique and its kill_chain_phases -> primary heuristic STRIDE tag",
+  "caveat": "Catalogue associations are generic; they do NOT prove a specific CVE exploit implements the linked ATT&CK technique or that an attack path is feasible."
+}

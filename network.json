@@ -1,0 +1,1672 @@
+{
+    "metadata": {
+        "name": "ACME Retail Ltd - hw network",
+        "version": "1.0",
+        "hosts": 27,
+        "cvss_version": "3.1",
+        "note": "Educational scenario. CVE data are real public vulnerabilities assigned to fictional hosts."
+    },
+    "network": {
+        "zones": [
+            {
+                "id": "internet",
+                "trusted": false
+            },
+            {
+                "id": "dmz",
+                "trusted": false
+            },
+            {
+                "id": "corp-lan",
+                "trusted": true
+            },
+            {
+                "id": "server-lan",
+                "trusted": true
+            },
+            {
+                "id": "dev-lan",
+                "trusted": true
+            },
+            {
+                "id": "db-zone",
+                "trusted": true
+            },
+            {
+                "id": "mgmt",
+                "trusted": true
+            }
+        ],
+        "hosts": [
+            {
+                "id": "H01",
+                "name": "web-shop",
+                "zone": "dmz",
+                "os": "Ubuntu 20.04",
+                "role": "Public e-commerce front end",
+                "criticality": 4,
+                "services": [
+                    {
+                        "name": "http",
+                        "product": "Apache httpd",
+                        "version": "2.4.49",
+                        "port": 80
+                    },
+                    {
+                        "name": "https",
+                        "product": "Apache httpd",
+                        "version": "2.4.49",
+                        "port": 443
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2021-41773",
+                        "service": "https"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "www-data",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "catalogue",
+                    "orders-cache"
+                ]
+            },
+            {
+                "id": "H02",
+                "name": "dns",
+                "zone": "dmz",
+                "os": "Debian 11",
+                "role": "Public DNS",
+                "criticality": 2,
+                "services": [
+                    {
+                        "name": "dns",
+                        "product": "BIND",
+                        "version": "9.16.1",
+                        "port": 53
+                    }
+                ],
+                "vulnerabilities": [],
+                "accounts": [
+                    {
+                        "user": "bind",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "zone-files"
+                ]
+            },
+            {
+                "id": "H03",
+                "name": "mail-gw",
+                "zone": "dmz",
+                "os": "Windows Server 2016",
+                "role": "Mail gateway",
+                "criticality": 3,
+                "services": [
+                    {
+                        "name": "smtp",
+                        "product": "Microsoft Exchange Server",
+                        "version": "2016 CU18",
+                        "port": 25
+                    },
+                    {
+                        "name": "https",
+                        "product": "Microsoft Exchange Server",
+                        "version": "2016 CU18",
+                        "port": 443
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2021-26855",
+                        "service": "https"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "SYSTEM",
+                        "privilege": "root"
+                    }
+                ],
+                "data_assets": [
+                    "mailboxes"
+                ]
+            },
+            {
+                "id": "H04",
+                "name": "vpn-gw",
+                "zone": "dmz",
+                "os": "Pulse Secure appliance",
+                "role": "Remote-access VPN",
+                "criticality": 4,
+                "services": [
+                    {
+                        "name": "https",
+                        "product": "Pulse Connect Secure",
+                        "version": "9.0R3",
+                        "port": 443
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2019-11510",
+                        "service": "https"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "admin",
+                        "privilege": "root"
+                    }
+                ],
+                "data_assets": [
+                    "vpn-credentials"
+                ]
+            },
+            {
+                "id": "H05",
+                "name": "ftp-partners",
+                "zone": "dmz",
+                "os": "Ubuntu 18.04",
+                "role": "Partner file exchange",
+                "criticality": 1,
+                "services": [
+                    {
+                        "name": "ftp",
+                        "product": "vsftpd",
+                        "version": "2.3.4",
+                        "port": 21
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2011-2523",
+                        "service": "ftp"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "ftp",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "partner-files"
+                ]
+            },
+            {
+                "id": "H06",
+                "name": "reverse-proxy",
+                "zone": "dmz",
+                "os": "Debian 11",
+                "role": "Reverse proxy for intranet apps",
+                "criticality": 2,
+                "services": [
+                    {
+                        "name": "http",
+                        "product": "nginx",
+                        "version": "1.22.1",
+                        "port": 80
+                    }
+                ],
+                "vulnerabilities": [],
+                "accounts": [
+                    {
+                        "user": "www",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": []
+            },
+            {
+                "id": "H07",
+                "name": "ws-reception",
+                "zone": "corp-lan",
+                "os": "Windows 7",
+                "role": "Corporate endpoint",
+                "criticality": 1,
+                "services": [
+                    {
+                        "name": "smb",
+                        "product": "SMBv1",
+                        "version": "1.0",
+                        "port": 445
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2017-0144",
+                        "service": "smb"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "user",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "user-files"
+                ]
+            },
+            {
+                "id": "H08",
+                "name": "ws-finance",
+                "zone": "corp-lan",
+                "os": "Windows 7",
+                "role": "Corporate endpoint",
+                "criticality": 3,
+                "services": [
+                    {
+                        "name": "rdp",
+                        "product": "Microsoft RDP",
+                        "version": "6.1",
+                        "port": 3389
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2019-0708",
+                        "service": "rdp"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "user",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "user-files"
+                ]
+            },
+            {
+                "id": "H09",
+                "name": "ws-engineer",
+                "zone": "corp-lan",
+                "os": "Ubuntu 20.04",
+                "role": "Corporate endpoint",
+                "criticality": 1,
+                "services": [
+                    {
+                        "name": "polkit",
+                        "product": "polkit",
+                        "version": "0.105",
+                        "port": 0
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2021-4034",
+                        "service": "polkit"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "user",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "user-files"
+                ]
+            },
+            {
+                "id": "H10",
+                "name": "ws-hr",
+                "zone": "corp-lan",
+                "os": "Windows 10 1909",
+                "role": "Corporate endpoint",
+                "criticality": 3,
+                "services": [
+                    {
+                        "name": "spooler",
+                        "product": "Print Spooler",
+                        "version": "10.0.18363",
+                        "port": 445
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2021-34527",
+                        "service": "spooler"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "user",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "user-files"
+                ]
+            },
+            {
+                "id": "H11",
+                "name": "ws-admin",
+                "zone": "corp-lan",
+                "os": "Ubuntu 20.04",
+                "role": "Corporate endpoint",
+                "criticality": 4,
+                "services": [
+                    {
+                        "name": "sudo",
+                        "product": "sudo",
+                        "version": "1.8.31",
+                        "port": 0
+                    },
+                    {
+                        "name": "ssh",
+                        "product": "OpenSSH",
+                        "version": "8.2p1",
+                        "port": 22
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2021-3156",
+                        "service": "sudo"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "sysadmin",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "user-files",
+                    "domain-admin-credentials-cached"
+                ]
+            },
+            {
+                "id": "H12",
+                "name": "printer-floor2",
+                "zone": "corp-lan",
+                "os": "Embedded",
+                "role": "Corporate endpoint",
+                "criticality": 1,
+                "services": [
+                    {
+                        "name": "http",
+                        "product": "Embedded web UI",
+                        "version": "1.0",
+                        "port": 80
+                    }
+                ],
+                "vulnerabilities": [],
+                "accounts": [
+                    {
+                        "user": "user",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "user-files"
+                ],
+                "misconfigurations": [
+                    {
+                        "id": "MC1",
+                        "description": "Default administrator credentials on web UI",
+                        "service": "http",
+                        "grants": "user"
+                    }
+                ]
+            },
+            {
+                "id": "H13",
+                "name": "dc01",
+                "zone": "server-lan",
+                "os": "Windows Server 2016",
+                "role": "Domain controller",
+                "criticality": 5,
+                "services": [
+                    {
+                        "name": "ldap",
+                        "product": "Active Directory",
+                        "version": "2016",
+                        "port": 389
+                    },
+                    {
+                        "name": "smb",
+                        "product": "Active Directory",
+                        "version": "2016",
+                        "port": 445
+                    },
+                    {
+                        "name": "netlogon",
+                        "product": "Netlogon",
+                        "version": "2016",
+                        "port": 445
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2020-1472",
+                        "service": "netlogon"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "Administrator",
+                        "privilege": "root"
+                    }
+                ],
+                "data_assets": [
+                    "ad-database",
+                    "password-hashes"
+                ]
+            },
+            {
+                "id": "H14",
+                "name": "fileserver",
+                "zone": "server-lan",
+                "os": "Ubuntu 16.04",
+                "role": "File server",
+                "criticality": 3,
+                "services": [
+                    {
+                        "name": "smb",
+                        "product": "Samba",
+                        "version": "4.5.9",
+                        "port": 445
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2017-7494",
+                        "service": "smb"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "smbuser",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "shared-documents"
+                ]
+            },
+            {
+                "id": "H15",
+                "name": "wiki",
+                "zone": "server-lan",
+                "os": "Ubuntu 20.04",
+                "role": "Intranet wiki",
+                "criticality": 2,
+                "services": [
+                    {
+                        "name": "http",
+                        "product": "Atlassian Confluence",
+                        "version": "7.18.0",
+                        "port": 8090
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2022-26134",
+                        "service": "http"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "confluence",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "internal-docs"
+                ]
+            },
+            {
+                "id": "H16",
+                "name": "gitlab",
+                "zone": "server-lan",
+                "os": "Ubuntu 20.04",
+                "role": "Source code and CI",
+                "criticality": 4,
+                "services": [
+                    {
+                        "name": "https",
+                        "product": "GitLab CE",
+                        "version": "13.9.3",
+                        "port": 443
+                    },
+                    {
+                        "name": "ssh",
+                        "product": "OpenSSH",
+                        "version": "8.2p1",
+                        "port": 22
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2021-22205",
+                        "service": "https"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "git",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "source-code",
+                    "deploy-keys"
+                ]
+            },
+            {
+                "id": "H17",
+                "name": "app-server",
+                "zone": "server-lan",
+                "os": "Ubuntu 18.04",
+                "role": "Business application backend",
+                "criticality": 4,
+                "services": [
+                    {
+                        "name": "http",
+                        "product": "Apache Struts",
+                        "version": "2.3.31",
+                        "port": 8080
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2017-5638",
+                        "service": "http"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "tomcat",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "session-data",
+                    "db-credentials"
+                ]
+            },
+            {
+                "id": "H18",
+                "name": "backup",
+                "zone": "server-lan",
+                "os": "Ubuntu 20.04 (kernel 5.10.0)",
+                "role": "Backup server",
+                "criticality": 4,
+                "services": [
+                    {
+                        "name": "ssh",
+                        "product": "OpenSSH",
+                        "version": "8.2p1",
+                        "port": 22
+                    },
+                    {
+                        "name": "kernel",
+                        "product": "Linux kernel",
+                        "version": "5.10.0",
+                        "port": 0
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2022-0847",
+                        "service": "kernel"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "backup",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "db-backups"
+                ]
+            },
+            {
+                "id": "H19",
+                "name": "log-server",
+                "zone": "server-lan",
+                "os": "Ubuntu 20.04",
+                "role": "Central logging",
+                "criticality": 3,
+                "services": [
+                    {
+                        "name": "logstash",
+                        "product": "Apache Log4j2 (Logstash)",
+                        "version": "2.14.1",
+                        "port": 5044
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2021-44228",
+                        "service": "logstash"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "logstash",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "audit-logs"
+                ]
+            },
+            {
+                "id": "H20",
+                "name": "db-customers",
+                "zone": "db-zone",
+                "os": "Ubuntu 14.04 (kernel 3.13)",
+                "role": "Customer database",
+                "criticality": 5,
+                "services": [
+                    {
+                        "name": "mysql",
+                        "product": "MySQL",
+                        "version": "5.5.22",
+                        "port": 3306
+                    },
+                    {
+                        "name": "kernel",
+                        "product": "Linux kernel",
+                        "version": "3.13",
+                        "port": 0
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2012-2122",
+                        "service": "mysql"
+                    },
+                    {
+                        "cve": "CVE-2016-5195",
+                        "service": "kernel"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "mysql",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "customer-pii",
+                    "payment-tokens"
+                ]
+            },
+            {
+                "id": "H21",
+                "name": "db-finance",
+                "zone": "db-zone",
+                "os": "Ubuntu 20.04",
+                "role": "Finance database",
+                "criticality": 5,
+                "services": [
+                    {
+                        "name": "postgres",
+                        "product": "PostgreSQL",
+                        "version": "12.9",
+                        "port": 5432
+                    },
+                    {
+                        "name": "polkit",
+                        "product": "polkit",
+                        "version": "0.105",
+                        "port": 0
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2021-4034",
+                        "service": "polkit"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "postgres",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "ledger",
+                    "payroll"
+                ]
+            },
+            {
+                "id": "H22",
+                "name": "db-hr",
+                "zone": "db-zone",
+                "os": "Debian 12",
+                "role": "HR database (fully patched)",
+                "criticality": 3,
+                "services": [
+                    {
+                        "name": "postgres",
+                        "product": "PostgreSQL",
+                        "version": "15.4",
+                        "port": 5432
+                    }
+                ],
+                "vulnerabilities": [],
+                "accounts": [
+                    {
+                        "user": "postgres",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "hr-records"
+                ]
+            },
+            {
+                "id": "H23",
+                "name": "dev-ws1",
+                "zone": "dev-lan",
+                "os": "Ubuntu 22.04",
+                "role": "Developer workstation",
+                "criticality": 2,
+                "services": [
+                    {
+                        "name": "http",
+                        "product": "Spring Framework on Tomcat",
+                        "version": "5.3.17",
+                        "port": 8080
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2022-22965",
+                        "service": "http"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "dev1",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "source-checkouts"
+                ]
+            },
+            {
+                "id": "H24",
+                "name": "test-cms",
+                "zone": "dev-lan",
+                "os": "Ubuntu 18.04",
+                "role": "Test CMS",
+                "criticality": 2,
+                "services": [
+                    {
+                        "name": "http",
+                        "product": "Drupal",
+                        "version": "8.4.5",
+                        "port": 80
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2018-7600",
+                        "service": "http"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "www-data",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "test-data"
+                ]
+            },
+            {
+                "id": "H25",
+                "name": "ci-runner",
+                "zone": "dev-lan",
+                "os": "Ubuntu 20.04",
+                "role": "CI runner",
+                "criticality": 3,
+                "services": [
+                    {
+                        "name": "sudo",
+                        "product": "sudo",
+                        "version": "1.8.31",
+                        "port": 0
+                    },
+                    {
+                        "name": "ssh",
+                        "product": "OpenSSH",
+                        "version": "8.2p1",
+                        "port": 22
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2021-3156",
+                        "service": "sudo"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "runner",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "deploy-keys"
+                ]
+            },
+            {
+                "id": "H26",
+                "name": "jump-host",
+                "zone": "mgmt",
+                "os": "Ubuntu 18.04",
+                "role": "Administrative jump host",
+                "criticality": 4,
+                "services": [
+                    {
+                        "name": "ssh",
+                        "product": "OpenSSH",
+                        "version": "7.7",
+                        "port": 22
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2018-15473",
+                        "service": "ssh"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "ops",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "ssh-keys"
+                ],
+                "misconfigurations": [
+                    {
+                        "id": "MC2",
+                        "description": "SSH password authentication enabled, no lockout",
+                        "service": "ssh",
+                        "grants": "user"
+                    }
+                ]
+            },
+            {
+                "id": "H27",
+                "name": "monitoring",
+                "zone": "mgmt",
+                "os": "Ubuntu 20.04",
+                "role": "Monitoring",
+                "criticality": 2,
+                "services": [
+                    {
+                        "name": "http",
+                        "product": "Grafana",
+                        "version": "8.3.0",
+                        "port": 3000
+                    }
+                ],
+                "vulnerabilities": [
+                    {
+                        "cve": "CVE-2021-43798",
+                        "service": "http"
+                    }
+                ],
+                "accounts": [
+                    {
+                        "user": "grafana",
+                        "privilege": "user"
+                    }
+                ],
+                "data_assets": [
+                    "dashboards"
+                ]
+            }
+        ],
+        "firewall_rules": [
+            {
+                "src_zone": "internet",
+                "src_host": "*",
+                "dst_zone": "dmz",
+                "dst_host": "H01",
+                "ports": [
+                    80,
+                    443
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "internet",
+                "src_host": "*",
+                "dst_zone": "dmz",
+                "dst_host": "H03",
+                "ports": [
+                    25,
+                    443
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "internet",
+                "src_host": "*",
+                "dst_zone": "dmz",
+                "dst_host": "H04",
+                "ports": [
+                    443
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "internet",
+                "src_host": "*",
+                "dst_zone": "dmz",
+                "dst_host": "H02",
+                "ports": [
+                    53
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "internet",
+                "src_host": "*",
+                "dst_zone": "dmz",
+                "dst_host": "H05",
+                "ports": [
+                    21
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "internet",
+                "src_host": "*",
+                "dst_zone": "dmz",
+                "dst_host": "H06",
+                "ports": [
+                    80
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "dmz",
+                "src_host": "H01",
+                "dst_zone": "server-lan",
+                "dst_host": "H17",
+                "ports": [
+                    8080
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "dmz",
+                "src_host": "H03",
+                "dst_zone": "server-lan",
+                "dst_host": "H13",
+                "ports": [
+                    389,
+                    445
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "dmz",
+                "src_host": "H06",
+                "dst_zone": "server-lan",
+                "dst_host": "H15",
+                "ports": [
+                    8090
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "dmz",
+                "src_host": "H01",
+                "dst_zone": "db-zone",
+                "dst_host": "H20",
+                "ports": [
+                    3306
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "dmz",
+                "src_host": "H04",
+                "dst_zone": "corp-lan",
+                "dst_host": "*",
+                "ports": [
+                    445,
+                    3389,
+                    22
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "corp-lan",
+                "src_host": "*",
+                "dst_zone": "server-lan",
+                "dst_host": "*",
+                "ports": [
+                    445,
+                    389,
+                    443,
+                    8080,
+                    8090
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "corp-lan",
+                "src_host": "*",
+                "dst_zone": "dmz",
+                "dst_host": "*",
+                "ports": [
+                    80,
+                    443
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "corp-lan",
+                "src_host": "*",
+                "dst_zone": "internet",
+                "dst_host": "*",
+                "ports": [
+                    80,
+                    443
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "corp-lan",
+                "src_host": "*",
+                "dst_zone": "mgmt",
+                "dst_host": "*",
+                "ports": [
+                    22
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "server-lan",
+                "src_host": "H17",
+                "dst_zone": "db-zone",
+                "dst_host": "H20",
+                "ports": [
+                    3306
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "server-lan",
+                "src_host": "H17",
+                "dst_zone": "db-zone",
+                "dst_host": "H21",
+                "ports": [
+                    5432
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "server-lan",
+                "src_host": "H18",
+                "dst_zone": "db-zone",
+                "dst_host": "*",
+                "ports": [
+                    22
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "server-lan",
+                "src_host": "*",
+                "dst_zone": "server-lan",
+                "dst_host": "H19",
+                "ports": [
+                    5044
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "server-lan",
+                "src_host": "*",
+                "dst_zone": "mgmt",
+                "dst_host": "H27",
+                "ports": [
+                    3000
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "dev-lan",
+                "src_host": "*",
+                "dst_zone": "server-lan",
+                "dst_host": "H16",
+                "ports": [
+                    443,
+                    22
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "dev-lan",
+                "src_host": "*",
+                "dst_zone": "dmz",
+                "dst_host": "*",
+                "ports": [
+                    80
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "dev-lan",
+                "src_host": "*",
+                "dst_zone": "internet",
+                "dst_host": "*",
+                "ports": [
+                    80,
+                    443
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "mgmt",
+                "src_host": "*",
+                "dst_zone": "server-lan",
+                "dst_host": "*",
+                "ports": [
+                    22,
+                    443
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "mgmt",
+                "src_host": "*",
+                "dst_zone": "db-zone",
+                "dst_host": "*",
+                "ports": [
+                    22,
+                    5432,
+                    3306
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "mgmt",
+                "src_host": "*",
+                "dst_zone": "corp-lan",
+                "dst_host": "*",
+                "ports": [
+                    22,
+                    3389,
+                    445
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "mgmt",
+                "src_host": "*",
+                "dst_zone": "dev-lan",
+                "dst_host": "*",
+                "ports": [
+                    22
+                ],
+                "action": "allow"
+            },
+            {
+                "src_zone": "server-lan",
+                "src_host": "H13",
+                "dst_zone": "corp-lan",
+                "dst_host": "*",
+                "ports": [
+                    3389
+                ],
+                "action": "allow"
+            }
+        ],
+        "trust_relations": [
+            {
+                "id": "T1",
+                "from_host": "H26",
+                "to_host": "H18",
+                "type": "ssh-key",
+                "grants": "user"
+            },
+            {
+                "id": "T2",
+                "from_host": "H26",
+                "to_host": "H20",
+                "type": "ssh-key",
+                "grants": "user"
+            },
+            {
+                "id": "T3",
+                "from_host": "H18",
+                "to_host": "H21",
+                "type": "backup-agent-credentials",
+                "grants": "user"
+            },
+            {
+                "id": "T4",
+                "from_host": "H16",
+                "to_host": "H17",
+                "type": "ci-deploy-key",
+                "grants": "user"
+            },
+            {
+                "id": "T5",
+                "from_host": "H25",
+                "to_host": "H16",
+                "type": "runner-token",
+                "grants": "user"
+            },
+            {
+                "id": "T6",
+                "from_host": "H11",
+                "to_host": "H13",
+                "type": "cached-domain-admin-credentials",
+                "grants": "root",
+                "requires": "root on source"
+            },
+            {
+                "id": "T7",
+                "from_host": "H13",
+                "to_host": "H14",
+                "type": "domain-admin",
+                "grants": "root",
+                "requires": "root on source"
+            },
+            {
+                "id": "T8",
+                "from_host": "H13",
+                "to_host": "H26",
+                "type": "domain-admin",
+                "grants": "root",
+                "requires": "root on source"
+            },
+            {
+                "id": "T9",
+                "from_host": "H17",
+                "to_host": "H20",
+                "type": "db-credentials-in-config",
+                "grants": "user",
+                "requires": "user on source"
+            }
+        ],
+        "data_flows": [
+            {
+                "id": "F1",
+                "src": "ext-customer",
+                "dst": "H01",
+                "protocol": "HTTPS",
+                "data": "orders"
+            },
+            {
+                "id": "F2",
+                "src": "H01",
+                "dst": "H17",
+                "protocol": "HTTP",
+                "data": "order-requests"
+            },
+            {
+                "id": "F3",
+                "src": "H17",
+                "dst": "H20",
+                "protocol": "MySQL",
+                "data": "customer-records"
+            },
+            {
+                "id": "F4",
+                "src": "H17",
+                "dst": "H21",
+                "protocol": "PostgreSQL",
+                "data": "invoices"
+            },
+            {
+                "id": "F5",
+                "src": "H18",
+                "dst": "H20",
+                "protocol": "SSH",
+                "data": "db-backup"
+            },
+            {
+                "id": "F6",
+                "src": "H18",
+                "dst": "H21",
+                "protocol": "SSH",
+                "data": "db-backup"
+            },
+            {
+                "id": "F7",
+                "src": "H18",
+                "dst": "H22",
+                "protocol": "SSH",
+                "data": "db-backup"
+            },
+            {
+                "id": "F8",
+                "src": "ext-partner",
+                "dst": "H05",
+                "protocol": "FTP",
+                "data": "partner-files"
+            },
+            {
+                "id": "F9",
+                "src": "ext-employee",
+                "dst": "H04",
+                "protocol": "HTTPS",
+                "data": "vpn-session"
+            },
+            {
+                "id": "F10",
+                "src": "H19",
+                "dst": "H27",
+                "protocol": "HTTP",
+                "data": "metrics"
+            }
+        ]
+    },
+    "attacker_scenarios": [
+        {
+            "id": "S1",
+            "name": "External attacker",
+            "entry_zone": "internet",
+            "initial_privilege": "none"
+        },
+        {
+            "id": "S2",
+            "name": "Phished insider (HR workstation)",
+            "entry_host": "H10",
+            "initial_privilege": "user"
+        }
+    ],
+    "goals": [
+        {
+            "id": "G1",
+            "host": "H20",
+            "privilege": "root",
+            "property": "confidentiality",
+            "description": "Exfiltrate customer PII"
+        },
+        {
+            "id": "G2",
+            "host": "H13",
+            "privilege": "root",
+            "property": "integrity",
+            "description": "Take over the domain"
+        },
+        {
+            "id": "G3",
+            "host": "H21",
+            "privilege": "user",
+            "property": "confidentiality",
+            "description": "Read payroll and ledger"
+        }
+    ],
+    "mitigations": [
+        {
+            "id": "M01",
+            "name": "Patch Apache httpd on H01",
+            "cost": 4000,
+            "type": "patch",
+            "targets": [
+                [
+                    "H01",
+                    "CVE-2021-41773"
+                ]
+            ]
+        },
+        {
+            "id": "M02",
+            "name": "Patch Exchange on H03",
+            "cost": 9000,
+            "type": "patch",
+            "targets": [
+                [
+                    "H03",
+                    "CVE-2021-26855"
+                ]
+            ]
+        },
+        {
+            "id": "M03",
+            "name": "Patch Pulse Secure on H04",
+            "cost": 6000,
+            "type": "patch",
+            "targets": [
+                [
+                    "H04",
+                    "CVE-2019-11510"
+                ]
+            ]
+        },
+        {
+            "id": "M04",
+            "name": "Retire vsftpd, move to SFTP on H05",
+            "cost": 3000,
+            "type": "patch",
+            "targets": [
+                [
+                    "H05",
+                    "CVE-2011-2523"
+                ]
+            ]
+        },
+        {
+            "id": "M05",
+            "name": "Patch Windows 7 workstations (upgrade to Windows 10)",
+            "cost": 25000,
+            "type": "patch",
+            "targets": [
+                [
+                    "H07",
+                    "CVE-2017-0144"
+                ],
+                [
+                    "H08",
+                    "CVE-2019-0708"
+                ]
+            ]
+        },
+        {
+            "id": "M06",
+            "name": "Patch Struts on H17",
+            "cost": 5000,
+            "type": "patch",
+            "targets": [
+                [
+                    "H17",
+                    "CVE-2017-5638"
+                ]
+            ]
+        },
+        {
+            "id": "M07",
+            "name": "Patch Zerologon and enforce secure channel on H13",
+            "cost": 3000,
+            "type": "patch",
+            "targets": [
+                [
+                    "H13",
+                    "CVE-2020-1472"
+                ]
+            ]
+        },
+        {
+            "id": "M08",
+            "name": "Patch Linux local privilege escalations (polkit, sudo) fleet-wide",
+            "cost": 8000,
+            "type": "patch",
+            "targets": [
+                [
+                    "H09",
+                    "CVE-2021-4034"
+                ],
+                [
+                    "H11",
+                    "CVE-2021-3156"
+                ],
+                [
+                    "H21",
+                    "CVE-2021-4034"
+                ],
+                [
+                    "H25",
+                    "CVE-2021-3156"
+                ]
+            ]
+        },
+        {
+            "id": "M09",
+            "name": "Upgrade MySQL and kernel on H20",
+            "cost": 15000,
+            "type": "patch",
+            "targets": [
+                [
+                    "H20",
+                    "CVE-2012-2122"
+                ],
+                [
+                    "H20",
+                    "CVE-2016-5195"
+                ]
+            ]
+        },
+        {
+            "id": "M10",
+            "name": "Block direct DMZ to DB flow (H01 to H20), route via application tier",
+            "cost": 12000,
+            "type": "block_flow",
+            "flows": [
+                [
+                    "H01",
+                    "H20",
+                    3306
+                ]
+            ]
+        },
+        {
+            "id": "M11",
+            "name": "Segment corp-lan from server-lan (allow only AD and file services)",
+            "cost": 30000,
+            "type": "block_flow",
+            "flows": [
+                [
+                    "corp-lan",
+                    "server-lan",
+                    8080
+                ],
+                [
+                    "corp-lan",
+                    "server-lan",
+                    8090
+                ],
+                [
+                    "corp-lan",
+                    "server-lan",
+                    443
+                ]
+            ]
+        },
+        {
+            "id": "M12",
+            "name": "Remove cached domain-admin credentials from H11 (tiered admin model, LAPS)",
+            "cost": 10000,
+            "type": "remove_trust",
+            "trusts": [
+                "T6",
+                "T9",
+                "T4"
+            ]
+        },
+        {
+            "id": "M13",
+            "name": "Restrict VPN pool: block H04 to corp-lan except required ports",
+            "cost": 7000,
+            "type": "block_flow",
+            "flows": [
+                [
+                    "H04",
+                    "corp-lan",
+                    445
+                ],
+                [
+                    "H04",
+                    "corp-lan",
+                    3389
+                ],
+                [
+                    "H04",
+                    "corp-lan",
+                    22
+                ]
+            ]
+        },
+        {
+            "id": "M14",
+            "name": "Deploy EDR on all servers (halves exploit success: x2 mean time to attack)",
+            "cost": 45000,
+            "type": "scale_time",
+            "factor": 2.0,
+            "scope": "all-hosts"
+        },
+        {
+            "id": "M15",
+            "name": "Patch Grafana and Confluence",
+            "cost": 4000,
+            "type": "patch",
+            "targets": [
+                [
+                    "H27",
+                    "CVE-2021-43798"
+                ],
+                [
+                    "H15",
+                    "CVE-2022-26134"
+                ]
+            ]
+        },
+        {
+            "id": "M16",
+            "name": "Rotate default printer password",
+            "cost": 200,
+            "type": "fix_misconfig",
+            "targets": [
+                "MC1"
+            ]
+        },
+        {
+            "id": "M17",
+            "name": "Disable SSH password login and enable lockout on H26",
+            "cost": 500,
+            "type": "fix_misconfig",
+            "targets": [
+                "MC2"
+            ]
+        },
+        {
+            "id": "M18",
+            "name": "Full network IDS (detection only, no effect on path feasibility)",
+            "cost": 60000,
+            "type": "detect_only"
+        }
+    ],
+    "total_mitigation_cost": 246700
+}

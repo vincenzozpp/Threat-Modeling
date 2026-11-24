@@ -1,0 +1,2445 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d15" for="edge" attr.name="requires" attr.type="string" />
+  <key id="d14" for="edge" attr.name="grant" attr.type="string" />
+  <key id="d13" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d12" for="edge" attr.name="data" attr.type="string" />
+  <key id="d11" for="edge" attr.name="protocol" attr.type="string" />
+  <key id="d10" for="edge" attr.name="flow_id" attr.type="string" />
+  <key id="d9" for="edge" attr.name="basis" attr.type="string" />
+  <key id="d8" for="edge" attr.name="port" attr.type="string" />
+  <key id="d7" for="edge" attr.name="kind" attr.type="string" />
+  <key id="d6" for="node" attr.name="product" attr.type="string" />
+  <key id="d5" for="node" attr.name="port" attr.type="string" />
+  <key id="d4" for="node" attr.name="criticality" attr.type="string" />
+  <key id="d3" for="node" attr.name="zone" attr.type="string" />
+  <key id="d2" for="node" attr.name="trusted" attr.type="string" />
+  <key id="d1" for="node" attr.name="name" attr.type="string" />
+  <key id="d0" for="node" attr.name="kind" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="zone:internet">
+      <data key="d0">trust_boundary</data>
+      <data key="d1">internet</data>
+      <data key="d2">False</data>
+    </node>
+    <node id="zone:dmz">
+      <data key="d0">trust_boundary</data>
+      <data key="d1">dmz</data>
+      <data key="d2">False</data>
+    </node>
+    <node id="zone:corp-lan">
+      <data key="d0">trust_boundary</data>
+      <data key="d1">corp-lan</data>
+      <data key="d2">True</data>
+    </node>
+    <node id="zone:server-lan">
+      <data key="d0">trust_boundary</data>
+      <data key="d1">server-lan</data>
+      <data key="d2">True</data>
+    </node>
+    <node id="zone:dev-lan">
+      <data key="d0">trust_boundary</data>
+      <data key="d1">dev-lan</data>
+      <data key="d2">True</data>
+    </node>
+    <node id="zone:db-zone">
+      <data key="d0">trust_boundary</data>
+      <data key="d1">db-zone</data>
+      <data key="d2">True</data>
+    </node>
+    <node id="zone:mgmt">
+      <data key="d0">trust_boundary</data>
+      <data key="d1">mgmt</data>
+      <data key="d2">True</data>
+    </node>
+    <node id="host:H01">
+      <data key="d0">process</data>
+      <data key="d1">web-shop</data>
+      <data key="d3">dmz</data>
+      <data key="d4">4</data>
+    </node>
+    <node id="service:H01:http:80">
+      <data key="d0">service</data>
+      <data key="d1">http</data>
+      <data key="d5">80</data>
+      <data key="d6">Apache httpd</data>
+    </node>
+    <node id="service:H01:https:443">
+      <data key="d0">service</data>
+      <data key="d1">https</data>
+      <data key="d5">443</data>
+      <data key="d6">Apache httpd</data>
+    </node>
+    <node id="asset:H01:0">
+      <data key="d0">data_store</data>
+      <data key="d1">catalogue</data>
+      <data key="d3">dmz</data>
+    </node>
+    <node id="asset:H01:1">
+      <data key="d0">data_store</data>
+      <data key="d1">orders-cache</data>
+      <data key="d3">dmz</data>
+    </node>
+    <node id="host:H02">
+      <data key="d0">process</data>
+      <data key="d1">dns</data>
+      <data key="d3">dmz</data>
+      <data key="d4">2</data>
+    </node>
+    <node id="service:H02:dns:53">
+      <data key="d0">service</data>
+      <data key="d1">dns</data>
+      <data key="d5">53</data>
+      <data key="d6">BIND</data>
+    </node>
+    <node id="asset:H02:0">
+      <data key="d0">data_store</data>
+      <data key="d1">zone-files</data>
+      <data key="d3">dmz</data>
+    </node>
+    <node id="host:H03">
+      <data key="d0">process</data>
+      <data key="d1">mail-gw</data>
+      <data key="d3">dmz</data>
+      <data key="d4">3</data>
+    </node>
+    <node id="service:H03:smtp:25">
+      <data key="d0">service</data>
+      <data key="d1">smtp</data>
+      <data key="d5">25</data>
+      <data key="d6">Microsoft Exchange Server</data>
+    </node>
+    <node id="service:H03:https:443">
+      <data key="d0">service</data>
+      <data key="d1">https</data>
+      <data key="d5">443</data>
+      <data key="d6">Microsoft Exchange Server</data>
+    </node>
+    <node id="asset:H03:0">
+      <data key="d0">data_store</data>
+      <data key="d1">mailboxes</data>
+      <data key="d3">dmz</data>
+    </node>
+    <node id="host:H04">
+      <data key="d0">process</data>
+      <data key="d1">vpn-gw</data>
+      <data key="d3">dmz</data>
+      <data key="d4">4</data>
+    </node>
+    <node id="service:H04:https:443">
+      <data key="d0">service</data>
+      <data key="d1">https</data>
+      <data key="d5">443</data>
+      <data key="d6">Pulse Connect Secure</data>
+    </node>
+    <node id="asset:H04:0">
+      <data key="d0">data_store</data>
+      <data key="d1">vpn-credentials</data>
+      <data key="d3">dmz</data>
+    </node>
+    <node id="host:H05">
+      <data key="d0">process</data>
+      <data key="d1">ftp-partners</data>
+      <data key="d3">dmz</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="service:H05:ftp:21">
+      <data key="d0">service</data>
+      <data key="d1">ftp</data>
+      <data key="d5">21</data>
+      <data key="d6">vsftpd</data>
+    </node>
+    <node id="asset:H05:0">
+      <data key="d0">data_store</data>
+      <data key="d1">partner-files</data>
+      <data key="d3">dmz</data>
+    </node>
+    <node id="host:H06">
+      <data key="d0">process</data>
+      <data key="d1">reverse-proxy</data>
+      <data key="d3">dmz</data>
+      <data key="d4">2</data>
+    </node>
+    <node id="service:H06:http:80">
+      <data key="d0">service</data>
+      <data key="d1">http</data>
+      <data key="d5">80</data>
+      <data key="d6">nginx</data>
+    </node>
+    <node id="host:H07">
+      <data key="d0">process</data>
+      <data key="d1">ws-reception</data>
+      <data key="d3">corp-lan</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="service:H07:smb:445">
+      <data key="d0">service</data>
+      <data key="d1">smb</data>
+      <data key="d5">445</data>
+      <data key="d6">SMBv1</data>
+    </node>
+    <node id="asset:H07:0">
+      <data key="d0">data_store</data>
+      <data key="d1">user-files</data>
+      <data key="d3">corp-lan</data>
+    </node>
+    <node id="host:H08">
+      <data key="d0">process</data>
+      <data key="d1">ws-finance</data>
+      <data key="d3">corp-lan</data>
+      <data key="d4">3</data>
+    </node>
+    <node id="service:H08:rdp:3389">
+      <data key="d0">service</data>
+      <data key="d1">rdp</data>
+      <data key="d5">3389</data>
+      <data key="d6">Microsoft RDP</data>
+    </node>
+    <node id="asset:H08:0">
+      <data key="d0">data_store</data>
+      <data key="d1">user-files</data>
+      <data key="d3">corp-lan</data>
+    </node>
+    <node id="host:H09">
+      <data key="d0">process</data>
+      <data key="d1">ws-engineer</data>
+      <data key="d3">corp-lan</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="service:H09:polkit:0">
+      <data key="d0">service</data>
+      <data key="d1">polkit</data>
+      <data key="d5">0</data>
+      <data key="d6">polkit</data>
+    </node>
+    <node id="asset:H09:0">
+      <data key="d0">data_store</data>
+      <data key="d1">user-files</data>
+      <data key="d3">corp-lan</data>
+    </node>
+    <node id="host:H10">
+      <data key="d0">process</data>
+      <data key="d1">ws-hr</data>
+      <data key="d3">corp-lan</data>
+      <data key="d4">3</data>
+    </node>
+    <node id="service:H10:spooler:445">
+      <data key="d0">service</data>
+      <data key="d1">spooler</data>
+      <data key="d5">445</data>
+      <data key="d6">Print Spooler</data>
+    </node>
+    <node id="asset:H10:0">
+      <data key="d0">data_store</data>
+      <data key="d1">user-files</data>
+      <data key="d3">corp-lan</data>
+    </node>
+    <node id="host:H11">
+      <data key="d0">process</data>
+      <data key="d1">ws-admin</data>
+      <data key="d3">corp-lan</data>
+      <data key="d4">4</data>
+    </node>
+    <node id="service:H11:sudo:0">
+      <data key="d0">service</data>
+      <data key="d1">sudo</data>
+      <data key="d5">0</data>
+      <data key="d6">sudo</data>
+    </node>
+    <node id="service:H11:ssh:22">
+      <data key="d0">service</data>
+      <data key="d1">ssh</data>
+      <data key="d5">22</data>
+      <data key="d6">OpenSSH</data>
+    </node>
+    <node id="asset:H11:0">
+      <data key="d0">data_store</data>
+      <data key="d1">user-files</data>
+      <data key="d3">corp-lan</data>
+    </node>
+    <node id="asset:H11:1">
+      <data key="d0">data_store</data>
+      <data key="d1">domain-admin-credentials-cached</data>
+      <data key="d3">corp-lan</data>
+    </node>
+    <node id="host:H12">
+      <data key="d0">process</data>
+      <data key="d1">printer-floor2</data>
+      <data key="d3">corp-lan</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="service:H12:http:80">
+      <data key="d0">service</data>
+      <data key="d1">http</data>
+      <data key="d5">80</data>
+      <data key="d6">Embedded web UI</data>
+    </node>
+    <node id="asset:H12:0">
+      <data key="d0">data_store</data>
+      <data key="d1">user-files</data>
+      <data key="d3">corp-lan</data>
+    </node>
+    <node id="host:H13">
+      <data key="d0">process</data>
+      <data key="d1">dc01</data>
+      <data key="d3">server-lan</data>
+      <data key="d4">5</data>
+    </node>
+    <node id="service:H13:ldap:389">
+      <data key="d0">service</data>
+      <data key="d1">ldap</data>
+      <data key="d5">389</data>
+      <data key="d6">Active Directory</data>
+    </node>
+    <node id="service:H13:smb:445">
+      <data key="d0">service</data>
+      <data key="d1">smb</data>
+      <data key="d5">445</data>
+      <data key="d6">Active Directory</data>
+    </node>
+    <node id="service:H13:netlogon:445">
+      <data key="d0">service</data>
+      <data key="d1">netlogon</data>
+      <data key="d5">445</data>
+      <data key="d6">Netlogon</data>
+    </node>
+    <node id="asset:H13:0">
+      <data key="d0">data_store</data>
+      <data key="d1">ad-database</data>
+      <data key="d3">server-lan</data>
+    </node>
+    <node id="asset:H13:1">
+      <data key="d0">data_store</data>
+      <data key="d1">password-hashes</data>
+      <data key="d3">server-lan</data>
+    </node>
+    <node id="host:H14">
+      <data key="d0">process</data>
+      <data key="d1">fileserver</data>
+      <data key="d3">server-lan</data>
+      <data key="d4">3</data>
+    </node>
+    <node id="service:H14:smb:445">
+      <data key="d0">service</data>
+      <data key="d1">smb</data>
+      <data key="d5">445</data>
+      <data key="d6">Samba</data>
+    </node>
+    <node id="asset:H14:0">
+      <data key="d0">data_store</data>
+      <data key="d1">shared-documents</data>
+      <data key="d3">server-lan</data>
+    </node>
+    <node id="host:H15">
+      <data key="d0">process</data>
+      <data key="d1">wiki</data>
+      <data key="d3">server-lan</data>
+      <data key="d4">2</data>
+    </node>
+    <node id="service:H15:http:8090">
+      <data key="d0">service</data>
+      <data key="d1">http</data>
+      <data key="d5">8090</data>
+      <data key="d6">Atlassian Confluence</data>
+    </node>
+    <node id="asset:H15:0">
+      <data key="d0">data_store</data>
+      <data key="d1">internal-docs</data>
+      <data key="d3">server-lan</data>
+    </node>
+    <node id="host:H16">
+      <data key="d0">process</data>
+      <data key="d1">gitlab</data>
+      <data key="d3">server-lan</data>
+      <data key="d4">4</data>
+    </node>
+    <node id="service:H16:https:443">
+      <data key="d0">service</data>
+      <data key="d1">https</data>
+      <data key="d5">443</data>
+      <data key="d6">GitLab CE</data>
+    </node>
+    <node id="service:H16:ssh:22">
+      <data key="d0">service</data>
+      <data key="d1">ssh</data>
+      <data key="d5">22</data>
+      <data key="d6">OpenSSH</data>
+    </node>
+    <node id="asset:H16:0">
+      <data key="d0">data_store</data>
+      <data key="d1">source-code</data>
+      <data key="d3">server-lan</data>
+    </node>
+    <node id="asset:H16:1">
+      <data key="d0">data_store</data>
+      <data key="d1">deploy-keys</data>
+      <data key="d3">server-lan</data>
+    </node>
+    <node id="host:H17">
+      <data key="d0">process</data>
+      <data key="d1">app-server</data>
+      <data key="d3">server-lan</data>
+      <data key="d4">4</data>
+    </node>
+    <node id="service:H17:http:8080">
+      <data key="d0">service</data>
+      <data key="d1">http</data>
+      <data key="d5">8080</data>
+      <data key="d6">Apache Struts</data>
+    </node>
+    <node id="asset:H17:0">
+      <data key="d0">data_store</data>
+      <data key="d1">session-data</data>
+      <data key="d3">server-lan</data>
+    </node>
+    <node id="asset:H17:1">
+      <data key="d0">data_store</data>
+      <data key="d1">db-credentials</data>
+      <data key="d3">server-lan</data>
+    </node>
+    <node id="host:H18">
+      <data key="d0">process</data>
+      <data key="d1">backup</data>
+      <data key="d3">server-lan</data>
+      <data key="d4">4</data>
+    </node>
+    <node id="service:H18:ssh:22">
+      <data key="d0">service</data>
+      <data key="d1">ssh</data>
+      <data key="d5">22</data>
+      <data key="d6">OpenSSH</data>
+    </node>
+    <node id="service:H18:kernel:0">
+      <data key="d0">service</data>
+      <data key="d1">kernel</data>
+      <data key="d5">0</data>
+      <data key="d6">Linux kernel</data>
+    </node>
+    <node id="asset:H18:0">
+      <data key="d0">data_store</data>
+      <data key="d1">db-backups</data>
+      <data key="d3">server-lan</data>
+    </node>
+    <node id="host:H19">
+      <data key="d0">process</data>
+      <data key="d1">log-server</data>
+      <data key="d3">server-lan</data>
+      <data key="d4">3</data>
+    </node>
+    <node id="service:H19:logstash:5044">
+      <data key="d0">service</data>
+      <data key="d1">logstash</data>
+      <data key="d5">5044</data>
+      <data key="d6">Apache Log4j2 (Logstash)</data>
+    </node>
+    <node id="asset:H19:0">
+      <data key="d0">data_store</data>
+      <data key="d1">audit-logs</data>
+      <data key="d3">server-lan</data>
+    </node>
+    <node id="host:H20">
+      <data key="d0">process</data>
+      <data key="d1">db-customers</data>
+      <data key="d3">db-zone</data>
+      <data key="d4">5</data>
+    </node>
+    <node id="service:H20:mysql:3306">
+      <data key="d0">service</data>
+      <data key="d1">mysql</data>
+      <data key="d5">3306</data>
+      <data key="d6">MySQL</data>
+    </node>
+    <node id="service:H20:kernel:0">
+      <data key="d0">service</data>
+      <data key="d1">kernel</data>
+      <data key="d5">0</data>
+      <data key="d6">Linux kernel</data>
+    </node>
+    <node id="asset:H20:0">
+      <data key="d0">data_store</data>
+      <data key="d1">customer-pii</data>
+      <data key="d3">db-zone</data>
+    </node>
+    <node id="asset:H20:1">
+      <data key="d0">data_store</data>
+      <data key="d1">payment-tokens</data>
+      <data key="d3">db-zone</data>
+    </node>
+    <node id="host:H21">
+      <data key="d0">process</data>
+      <data key="d1">db-finance</data>
+      <data key="d3">db-zone</data>
+      <data key="d4">5</data>
+    </node>
+    <node id="service:H21:postgres:5432">
+      <data key="d0">service</data>
+      <data key="d1">postgres</data>
+      <data key="d5">5432</data>
+      <data key="d6">PostgreSQL</data>
+    </node>
+    <node id="service:H21:polkit:0">
+      <data key="d0">service</data>
+      <data key="d1">polkit</data>
+      <data key="d5">0</data>
+      <data key="d6">polkit</data>
+    </node>
+    <node id="asset:H21:0">
+      <data key="d0">data_store</data>
+      <data key="d1">ledger</data>
+      <data key="d3">db-zone</data>
+    </node>
+    <node id="asset:H21:1">
+      <data key="d0">data_store</data>
+      <data key="d1">payroll</data>
+      <data key="d3">db-zone</data>
+    </node>
+    <node id="host:H22">
+      <data key="d0">process</data>
+      <data key="d1">db-hr</data>
+      <data key="d3">db-zone</data>
+      <data key="d4">3</data>
+    </node>
+    <node id="service:H22:postgres:5432">
+      <data key="d0">service</data>
+      <data key="d1">postgres</data>
+      <data key="d5">5432</data>
+      <data key="d6">PostgreSQL</data>
+    </node>
+    <node id="asset:H22:0">
+      <data key="d0">data_store</data>
+      <data key="d1">hr-records</data>
+      <data key="d3">db-zone</data>
+    </node>
+    <node id="host:H23">
+      <data key="d0">process</data>
+      <data key="d1">dev-ws1</data>
+      <data key="d3">dev-lan</data>
+      <data key="d4">2</data>
+    </node>
+    <node id="service:H23:http:8080">
+      <data key="d0">service</data>
+      <data key="d1">http</data>
+      <data key="d5">8080</data>
+      <data key="d6">Spring Framework on Tomcat</data>
+    </node>
+    <node id="asset:H23:0">
+      <data key="d0">data_store</data>
+      <data key="d1">source-checkouts</data>
+      <data key="d3">dev-lan</data>
+    </node>
+    <node id="host:H24">
+      <data key="d0">process</data>
+      <data key="d1">test-cms</data>
+      <data key="d3">dev-lan</data>
+      <data key="d4">2</data>
+    </node>
+    <node id="service:H24:http:80">
+      <data key="d0">service</data>
+      <data key="d1">http</data>
+      <data key="d5">80</data>
+      <data key="d6">Drupal</data>
+    </node>
+    <node id="asset:H24:0">
+      <data key="d0">data_store</data>
+      <data key="d1">test-data</data>
+      <data key="d3">dev-lan</data>
+    </node>
+    <node id="host:H25">
+      <data key="d0">process</data>
+      <data key="d1">ci-runner</data>
+      <data key="d3">dev-lan</data>
+      <data key="d4">3</data>
+    </node>
+    <node id="service:H25:sudo:0">
+      <data key="d0">service</data>
+      <data key="d1">sudo</data>
+      <data key="d5">0</data>
+      <data key="d6">sudo</data>
+    </node>
+    <node id="service:H25:ssh:22">
+      <data key="d0">service</data>
+      <data key="d1">ssh</data>
+      <data key="d5">22</data>
+      <data key="d6">OpenSSH</data>
+    </node>
+    <node id="asset:H25:0">
+      <data key="d0">data_store</data>
+      <data key="d1">deploy-keys</data>
+      <data key="d3">dev-lan</data>
+    </node>
+    <node id="host:H26">
+      <data key="d0">process</data>
+      <data key="d1">jump-host</data>
+      <data key="d3">mgmt</data>
+      <data key="d4">4</data>
+    </node>
+    <node id="service:H26:ssh:22">
+      <data key="d0">service</data>
+      <data key="d1">ssh</data>
+      <data key="d5">22</data>
+      <data key="d6">OpenSSH</data>
+    </node>
+    <node id="asset:H26:0">
+      <data key="d0">data_store</data>
+      <data key="d1">ssh-keys</data>
+      <data key="d3">mgmt</data>
+    </node>
+    <node id="host:H27">
+      <data key="d0">process</data>
+      <data key="d1">monitoring</data>
+      <data key="d3">mgmt</data>
+      <data key="d4">2</data>
+    </node>
+    <node id="service:H27:http:3000">
+      <data key="d0">service</data>
+      <data key="d1">http</data>
+      <data key="d5">3000</data>
+      <data key="d6">Grafana</data>
+    </node>
+    <node id="asset:H27:0">
+      <data key="d0">data_store</data>
+      <data key="d1">dashboards</data>
+      <data key="d3">mgmt</data>
+    </node>
+    <node id="ext:ext-customer">
+      <data key="d0">external_entity</data>
+      <data key="d1">ext-customer</data>
+      <data key="d3">internet</data>
+    </node>
+    <node id="ext:ext-partner">
+      <data key="d0">external_entity</data>
+      <data key="d1">ext-partner</data>
+      <data key="d3">internet</data>
+    </node>
+    <node id="ext:ext-employee">
+      <data key="d0">external_entity</data>
+      <data key="d1">ext-employee</data>
+      <data key="d3">internet</data>
+    </node>
+    <edge source="zone:internet" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="zone:internet" target="host:H01" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="zone:internet" target="host:H02" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">53</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="zone:internet" target="host:H03" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">25</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="zone:internet" target="host:H03" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="zone:internet" target="host:H04" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="zone:internet" target="host:H05" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">21</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="zone:internet" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="zone:dmz" target="host:H01" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:dmz" target="host:H02" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:dmz" target="host:H03" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:dmz" target="host:H04" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:dmz" target="host:H05" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:dmz" target="host:H06" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:corp-lan" target="host:H07" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:corp-lan" target="host:H08" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:corp-lan" target="host:H09" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:corp-lan" target="host:H10" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:corp-lan" target="host:H11" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:corp-lan" target="host:H12" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:server-lan" target="host:H13" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:server-lan" target="host:H14" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:server-lan" target="host:H15" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:server-lan" target="host:H16" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:server-lan" target="host:H17" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:server-lan" target="host:H18" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:server-lan" target="host:H19" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:dev-lan" target="host:H23" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:dev-lan" target="host:H24" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:dev-lan" target="host:H25" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:db-zone" target="host:H20" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:db-zone" target="host:H21" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:db-zone" target="host:H22" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:mgmt" target="host:H26" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="zone:mgmt" target="host:H27" id="0">
+      <data key="d7">contains</data>
+    </edge>
+    <edge source="host:H01" target="service:H01:http:80" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H01" target="service:H01:https:443" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H01" target="asset:H01:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H01" target="asset:H01:1" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H01" target="host:H17" id="0">
+      <data key="d7">declared-data-flow</data>
+      <data key="d10">F2</data>
+      <data key="d11">HTTP</data>
+      <data key="d12">order-requests</data>
+    </edge>
+    <edge source="host:H01" target="host:H17" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H01" target="host:H02" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">53</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H01" target="host:H03" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">25</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H01" target="host:H03" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H01" target="host:H04" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H01" target="host:H05" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">21</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H01" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H01" target="host:H20" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3306</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H02" target="service:H02:dns:53" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H02" target="asset:H02:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H02" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H02" target="host:H01" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H02" target="host:H03" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">25</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H02" target="host:H03" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H02" target="host:H04" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H02" target="host:H05" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">21</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H02" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H03" target="service:H03:smtp:25" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H03" target="service:H03:https:443" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H03" target="asset:H03:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H03" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H03" target="host:H01" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H03" target="host:H02" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">53</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H03" target="host:H04" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H03" target="host:H05" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">21</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H03" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H03" target="host:H13" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H03" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H04" target="service:H04:https:443" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H04" target="asset:H04:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H04" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H04" target="host:H01" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H04" target="host:H02" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">53</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H04" target="host:H03" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">25</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H04" target="host:H03" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H04" target="host:H05" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">21</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H04" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H04" target="host:H07" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H04" target="host:H08" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3389</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H04" target="host:H10" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H04" target="host:H11" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H05" target="service:H05:ftp:21" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H05" target="asset:H05:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H05" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H05" target="host:H01" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H05" target="host:H02" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">53</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H05" target="host:H03" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">25</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H05" target="host:H03" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H05" target="host:H04" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H05" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H06" target="service:H06:http:80" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H06" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H06" target="host:H01" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H06" target="host:H02" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">53</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H06" target="host:H03" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">25</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H06" target="host:H03" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H06" target="host:H04" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H06" target="host:H05" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">21</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H06" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="service:H07:smb:445" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H07" target="asset:H07:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H07" target="zone:internet" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="zone:internet" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H01" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H03" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H04" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H08" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3389</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H10" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H11" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H12" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H13" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H14" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H17" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H07" target="host:H26" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="service:H08:rdp:3389" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H08" target="asset:H08:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H08" target="zone:internet" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="zone:internet" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H01" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H03" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H04" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H07" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H10" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H11" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H12" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H13" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H14" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H17" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H08" target="host:H26" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="service:H09:polkit:0" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H09" target="asset:H09:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H09" target="zone:internet" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="zone:internet" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H01" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H03" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H04" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H07" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H08" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3389</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H10" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H11" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H12" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H13" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H14" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H17" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H09" target="host:H26" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="service:H10:spooler:445" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H10" target="asset:H10:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H10" target="zone:internet" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="zone:internet" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H01" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H03" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H04" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H07" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H08" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3389</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H11" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H12" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H13" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H14" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H17" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H10" target="host:H26" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="service:H11:sudo:0" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H11" target="service:H11:ssh:22" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H11" target="asset:H11:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H11" target="asset:H11:1" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H11" target="host:H13" id="0">
+      <data key="d7">trust</data>
+      <data key="d13">T6</data>
+      <data key="d14">root</data>
+      <data key="d15">root on source</data>
+    </edge>
+    <edge source="host:H11" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H13" id="2">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="zone:internet" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="zone:internet" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H01" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H03" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H04" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H07" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H08" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3389</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H10" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H12" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H14" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H17" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H11" target="host:H26" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="service:H12:http:80" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H12" target="asset:H12:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H12" target="zone:internet" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="zone:internet" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H01" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H03" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H04" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H07" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H08" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3389</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H10" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H11" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H13" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H14" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H17" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H12" target="host:H26" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H13" target="service:H13:ldap:389" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H13" target="service:H13:smb:445" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H13" target="service:H13:netlogon:445" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H13" target="asset:H13:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H13" target="asset:H13:1" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H13" target="host:H14" id="0">
+      <data key="d7">trust</data>
+      <data key="d13">T7</data>
+      <data key="d14">root</data>
+      <data key="d15">root on source</data>
+    </edge>
+    <edge source="host:H13" target="host:H14" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H13" target="host:H26" id="0">
+      <data key="d7">trust</data>
+      <data key="d13">T8</data>
+      <data key="d14">root</data>
+      <data key="d15">root on source</data>
+    </edge>
+    <edge source="host:H13" target="host:H08" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3389</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H13" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H13" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H13" target="host:H16" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H13" target="host:H17" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H13" target="host:H18" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H13" target="host:H19" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5044</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H13" target="host:H27" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3000</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H14" target="service:H14:smb:445" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H14" target="asset:H14:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H14" target="host:H13" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H14" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H14" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H14" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H14" target="host:H16" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H14" target="host:H17" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H14" target="host:H18" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H14" target="host:H19" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5044</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H14" target="host:H27" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3000</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H15" target="service:H15:http:8090" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H15" target="asset:H15:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H15" target="host:H13" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H15" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H15" target="host:H14" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H15" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H15" target="host:H16" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H15" target="host:H17" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H15" target="host:H18" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H15" target="host:H19" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5044</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H15" target="host:H27" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3000</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H16" target="service:H16:https:443" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H16" target="service:H16:ssh:22" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H16" target="asset:H16:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H16" target="asset:H16:1" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H16" target="host:H17" id="0">
+      <data key="d7">trust</data>
+      <data key="d13">T4</data>
+      <data key="d14">user</data>
+      <data key="d15" />
+    </edge>
+    <edge source="host:H16" target="host:H17" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H16" target="host:H13" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H16" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H16" target="host:H14" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H16" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H16" target="host:H18" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H16" target="host:H19" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5044</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H16" target="host:H27" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3000</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H17" target="service:H17:http:8080" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H17" target="asset:H17:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H17" target="asset:H17:1" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H17" target="host:H20" id="0">
+      <data key="d7">declared-data-flow</data>
+      <data key="d10">F3</data>
+      <data key="d11">MySQL</data>
+      <data key="d12">customer-records</data>
+    </edge>
+    <edge source="host:H17" target="host:H20" id="1">
+      <data key="d7">trust</data>
+      <data key="d13">T9</data>
+      <data key="d14">user</data>
+      <data key="d15">user on source</data>
+    </edge>
+    <edge source="host:H17" target="host:H20" id="2">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3306</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H17" target="host:H21" id="0">
+      <data key="d7">declared-data-flow</data>
+      <data key="d10">F4</data>
+      <data key="d11">PostgreSQL</data>
+      <data key="d12">invoices</data>
+    </edge>
+    <edge source="host:H17" target="host:H21" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5432</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H17" target="host:H13" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H17" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H17" target="host:H14" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H17" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H17" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H17" target="host:H16" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H17" target="host:H18" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H17" target="host:H19" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5044</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H17" target="host:H27" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3000</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H18" target="service:H18:ssh:22" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H18" target="service:H18:kernel:0" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H18" target="asset:H18:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H18" target="host:H20" id="0">
+      <data key="d7">declared-data-flow</data>
+      <data key="d10">F5</data>
+      <data key="d11">SSH</data>
+      <data key="d12">db-backup</data>
+    </edge>
+    <edge source="host:H18" target="host:H21" id="0">
+      <data key="d7">declared-data-flow</data>
+      <data key="d10">F6</data>
+      <data key="d11">SSH</data>
+      <data key="d12">db-backup</data>
+    </edge>
+    <edge source="host:H18" target="host:H21" id="1">
+      <data key="d7">trust</data>
+      <data key="d13">T3</data>
+      <data key="d14">user</data>
+      <data key="d15" />
+    </edge>
+    <edge source="host:H18" target="host:H22" id="0">
+      <data key="d7">declared-data-flow</data>
+      <data key="d10">F7</data>
+      <data key="d11">SSH</data>
+      <data key="d12">db-backup</data>
+    </edge>
+    <edge source="host:H18" target="host:H13" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H18" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H18" target="host:H14" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H18" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H18" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H18" target="host:H16" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H18" target="host:H17" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H18" target="host:H19" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5044</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H18" target="host:H27" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3000</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H19" target="service:H19:logstash:5044" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H19" target="asset:H19:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H19" target="host:H27" id="0">
+      <data key="d7">declared-data-flow</data>
+      <data key="d10">F10</data>
+      <data key="d11">HTTP</data>
+      <data key="d12">metrics</data>
+    </edge>
+    <edge source="host:H19" target="host:H27" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3000</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H19" target="host:H13" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">389</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H19" target="host:H13" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H19" target="host:H14" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H19" target="host:H15" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8090</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H19" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H19" target="host:H16" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H19" target="host:H17" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H19" target="host:H18" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H20" target="service:H20:mysql:3306" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H20" target="service:H20:kernel:0" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H20" target="asset:H20:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H20" target="asset:H20:1" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H20" target="host:H21" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5432</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H20" target="host:H22" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5432</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H21" target="service:H21:postgres:5432" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H21" target="service:H21:polkit:0" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H21" target="asset:H21:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H21" target="asset:H21:1" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H21" target="host:H20" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3306</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H21" target="host:H22" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5432</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H22" target="service:H22:postgres:5432" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H22" target="asset:H22:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H22" target="host:H20" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3306</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H22" target="host:H21" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5432</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H23" target="service:H23:http:8080" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H23" target="asset:H23:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H23" target="zone:internet" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H23" target="zone:internet" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H23" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H23" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H23" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H23" target="host:H16" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H23" target="host:H24" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H23" target="host:H25" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H24" target="service:H24:http:80" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H24" target="asset:H24:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H24" target="zone:internet" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H24" target="zone:internet" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H24" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H24" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H24" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H24" target="host:H16" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H24" target="host:H23" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H24" target="host:H25" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H25" target="service:H25:sudo:0" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H25" target="service:H25:ssh:22" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H25" target="asset:H25:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H25" target="host:H16" id="0">
+      <data key="d7">trust</data>
+      <data key="d13">T5</data>
+      <data key="d14">user</data>
+      <data key="d15" />
+    </edge>
+    <edge source="host:H25" target="host:H16" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H25" target="host:H16" id="2">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H25" target="zone:internet" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H25" target="zone:internet" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H25" target="host:H01" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H25" target="host:H06" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H25" target="host:H23" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">8080</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H25" target="host:H24" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">80</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H26" target="service:H26:ssh:22" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H26" target="asset:H26:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H26" target="host:H18" id="0">
+      <data key="d7">trust</data>
+      <data key="d13">T1</data>
+      <data key="d14">user</data>
+      <data key="d15" />
+    </edge>
+    <edge source="host:H26" target="host:H18" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H26" target="host:H20" id="0">
+      <data key="d7">trust</data>
+      <data key="d13">T2</data>
+      <data key="d14">user</data>
+      <data key="d15" />
+    </edge>
+    <edge source="host:H26" target="host:H20" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3306</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H26" target="host:H07" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H26" target="host:H08" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3389</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H26" target="host:H10" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H26" target="host:H11" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H26" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H26" target="host:H16" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H26" target="host:H21" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5432</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H26" target="host:H22" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5432</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H26" target="host:H25" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H26" target="host:H27" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3000</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="host:H27" target="service:H27:http:3000" id="0">
+      <data key="d7">exposes-service</data>
+    </edge>
+    <edge source="host:H27" target="asset:H27:0" id="0">
+      <data key="d7">holds-data</data>
+    </edge>
+    <edge source="host:H27" target="host:H07" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H27" target="host:H08" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3389</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H27" target="host:H10" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">445</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H27" target="host:H11" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H27" target="host:H16" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H27" target="host:H16" id="1">
+      <data key="d7">port-reachable</data>
+      <data key="d8">443</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H27" target="host:H18" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H27" target="host:H20" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">3306</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H27" target="host:H21" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5432</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H27" target="host:H22" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">5432</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H27" target="host:H25" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">explicit-allow</data>
+    </edge>
+    <edge source="host:H27" target="host:H26" id="0">
+      <data key="d7">port-reachable</data>
+      <data key="d8">22</data>
+      <data key="d9">assumed-intra-zone-allow</data>
+    </edge>
+    <edge source="ext:ext-customer" target="host:H01" id="0">
+      <data key="d7">declared-data-flow</data>
+      <data key="d10">F1</data>
+      <data key="d11">HTTPS</data>
+      <data key="d12">orders</data>
+    </edge>
+    <edge source="ext:ext-partner" target="host:H05" id="0">
+      <data key="d7">declared-data-flow</data>
+      <data key="d10">F8</data>
+      <data key="d11">FTP</data>
+      <data key="d12">partner-files</data>
+    </edge>
+    <edge source="ext:ext-employee" target="host:H04" id="0">
+      <data key="d7">declared-data-flow</data>
+      <data key="d10">F9</data>
+      <data key="d11">HTTPS</data>
+      <data key="d12">vpn-session</data>
+    </edge>
+  </graph>
+</graphml>

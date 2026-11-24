@@ -1,0 +1,6 @@
+host,misconfiguration,description,capec,attack_technique,tactic,stride_tag,mapping_evidence,status
+H12,MC1,Default administrator credentials on web UI,CAPEC-70,T1078.001,initial-access,Spoofing,Default credentials; manual analogy to CAPEC-70; direct CAPEC taxonomy mapping,manual-analogy
+H12,MC1,Default administrator credentials on web UI,CAPEC-70,T1078.001,persistence,Spoofing,Default credentials; manual analogy to CAPEC-70; direct CAPEC taxonomy mapping,manual-analogy
+H12,MC1,Default administrator credentials on web UI,CAPEC-70,T1078.001,privilege-escalation,Spoofing,Default credentials; manual analogy to CAPEC-70; direct CAPEC taxonomy mapping,manual-analogy
+H12,MC1,Default administrator credentials on web UI,CAPEC-70,T1078.001,stealth,Spoofing,Default credentials; manual analogy to CAPEC-70; direct CAPEC taxonomy mapping,manual-analogy
+H26,MC2,"SSH password authentication enabled, no lockout",CAPEC-49,T1110.001,credential-access,Spoofing,Password authentication with no lockout; manual analogy to CAPEC-49; direct CAPEC taxonomy mapping,manual-analogy

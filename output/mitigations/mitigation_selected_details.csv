@@ -1,0 +1,9 @@
+plan,mitigation,name,cost_euros,type
+Greedy 30%,M06,Patch Struts on H17,5000,patch
+Greedy 30%,M07,Patch Zerologon and enforce secure channel on H13,3000,patch
+Exact 30%,M06,Patch Struts on H17,5000,patch
+Exact 30%,M07,Patch Zerologon and enforce secure channel on H13,3000,patch
+Greedy 60%,M06,Patch Struts on H17,5000,patch
+Greedy 60%,M07,Patch Zerologon and enforce secure channel on H13,3000,patch
+Exact 60%,M06,Patch Struts on H17,5000,patch
+Exact 60%,M07,Patch Zerologon and enforce secure channel on H13,3000,patch

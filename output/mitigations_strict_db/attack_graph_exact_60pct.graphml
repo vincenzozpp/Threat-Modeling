@@ -1,0 +1,2389 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d9" for="edge" attr.name="postcondition" attr.type="string" />
+  <key id="d8" for="edge" attr.name="precondition" attr.type="string" />
+  <key id="d7" for="edge" attr.name="attempt_hours" attr.type="long" />
+  <key id="d6" for="edge" attr.name="probability" attr.type="double" />
+  <key id="d5" for="edge" attr.name="conditional_note" attr.type="string" />
+  <key id="d4" for="edge" attr.name="port" attr.type="long" />
+  <key id="d3" for="edge" attr.name="reference" attr.type="string" />
+  <key id="d2" for="edge" attr.name="mechanism" attr.type="string" />
+  <key id="d1" for="node" attr.name="zone" attr.type="string" />
+  <key id="d0" for="node" attr.name="label" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="H01:user">
+      <data key="d0">H01:user</data>
+      <data key="d1">dmz</data>
+    </node>
+    <node id="H01:root">
+      <data key="d0">H01:root</data>
+      <data key="d1">dmz</data>
+    </node>
+    <node id="H02:user">
+      <data key="d0">H02:user</data>
+      <data key="d1">dmz</data>
+    </node>
+    <node id="H02:root">
+      <data key="d0">H02:root</data>
+      <data key="d1">dmz</data>
+    </node>
+    <node id="H03:user">
+      <data key="d0">H03:user</data>
+      <data key="d1">dmz</data>
+    </node>
+    <node id="H03:root">
+      <data key="d0">H03:root</data>
+      <data key="d1">dmz</data>
+    </node>
+    <node id="H04:user">
+      <data key="d0">H04:user</data>
+      <data key="d1">dmz</data>
+    </node>
+    <node id="H04:root">
+      <data key="d0">H04:root</data>
+      <data key="d1">dmz</data>
+    </node>
+    <node id="H05:user">
+      <data key="d0">H05:user</data>
+      <data key="d1">dmz</data>
+    </node>
+    <node id="H05:root">
+      <data key="d0">H05:root</data>
+      <data key="d1">dmz</data>
+    </node>
+    <node id="H06:user">
+      <data key="d0">H06:user</data>
+      <data key="d1">dmz</data>
+    </node>
+    <node id="H06:root">
+      <data key="d0">H06:root</data>
+      <data key="d1">dmz</data>
+    </node>
+    <node id="H07:user">
+      <data key="d0">H07:user</data>
+      <data key="d1">corp-lan</data>
+    </node>
+    <node id="H07:root">
+      <data key="d0">H07:root</data>
+      <data key="d1">corp-lan</data>
+    </node>
+    <node id="H08:user">
+      <data key="d0">H08:user</data>
+      <data key="d1">corp-lan</data>
+    </node>
+    <node id="H08:root">
+      <data key="d0">H08:root</data>
+      <data key="d1">corp-lan</data>
+    </node>
+    <node id="H09:user">
+      <data key="d0">H09:user</data>
+      <data key="d1">corp-lan</data>
+    </node>
+    <node id="H09:root">
+      <data key="d0">H09:root</data>
+      <data key="d1">corp-lan</data>
+    </node>
+    <node id="H10:user">
+      <data key="d0">H10:user</data>
+      <data key="d1">corp-lan</data>
+    </node>
+    <node id="H10:root">
+      <data key="d0">H10:root</data>
+      <data key="d1">corp-lan</data>
+    </node>
+    <node id="H11:user">
+      <data key="d0">H11:user</data>
+      <data key="d1">corp-lan</data>
+    </node>
+    <node id="H11:root">
+      <data key="d0">H11:root</data>
+      <data key="d1">corp-lan</data>
+    </node>
+    <node id="H12:user">
+      <data key="d0">H12:user</data>
+      <data key="d1">corp-lan</data>
+    </node>
+    <node id="H12:root">
+      <data key="d0">H12:root</data>
+      <data key="d1">corp-lan</data>
+    </node>
+    <node id="H13:user">
+      <data key="d0">H13:user</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H13:root">
+      <data key="d0">H13:root</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H14:user">
+      <data key="d0">H14:user</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H14:root">
+      <data key="d0">H14:root</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H15:user">
+      <data key="d0">H15:user</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H15:root">
+      <data key="d0">H15:root</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H16:user">
+      <data key="d0">H16:user</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H16:root">
+      <data key="d0">H16:root</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H17:user">
+      <data key="d0">H17:user</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H17:root">
+      <data key="d0">H17:root</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H18:user">
+      <data key="d0">H18:user</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H18:root">
+      <data key="d0">H18:root</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H19:user">
+      <data key="d0">H19:user</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H19:root">
+      <data key="d0">H19:root</data>
+      <data key="d1">server-lan</data>
+    </node>
+    <node id="H20:user">
+      <data key="d0">H20:user</data>
+      <data key="d1">db-zone</data>
+    </node>
+    <node id="H20:root">
+      <data key="d0">H20:root</data>
+      <data key="d1">db-zone</data>
+    </node>
+    <node id="H21:user">
+      <data key="d0">H21:user</data>
+      <data key="d1">db-zone</data>
+    </node>
+    <node id="H21:root">
+      <data key="d0">H21:root</data>
+      <data key="d1">db-zone</data>
+    </node>
+    <node id="H22:user">
+      <data key="d0">H22:user</data>
+      <data key="d1">db-zone</data>
+    </node>
+    <node id="H22:root">
+      <data key="d0">H22:root</data>
+      <data key="d1">db-zone</data>
+    </node>
+    <node id="H23:user">
+      <data key="d0">H23:user</data>
+      <data key="d1">dev-lan</data>
+    </node>
+    <node id="H23:root">
+      <data key="d0">H23:root</data>
+      <data key="d1">dev-lan</data>
+    </node>
+    <node id="H24:user">
+      <data key="d0">H24:user</data>
+      <data key="d1">dev-lan</data>
+    </node>
+    <node id="H24:root">
+      <data key="d0">H24:root</data>
+      <data key="d1">dev-lan</data>
+    </node>
+    <node id="H25:user">
+      <data key="d0">H25:user</data>
+      <data key="d1">dev-lan</data>
+    </node>
+    <node id="H25:root">
+      <data key="d0">H25:root</data>
+      <data key="d1">dev-lan</data>
+    </node>
+    <node id="H26:user">
+      <data key="d0">H26:user</data>
+      <data key="d1">mgmt</data>
+    </node>
+    <node id="H26:root">
+      <data key="d0">H26:root</data>
+      <data key="d1">mgmt</data>
+    </node>
+    <node id="H27:user">
+      <data key="d0">H27:user</data>
+      <data key="d1">mgmt</data>
+    </node>
+    <node id="H27:root">
+      <data key="d0">H27:root</data>
+      <data key="d1">mgmt</data>
+    </node>
+    <node id="INTERNET:none">
+      <data key="d0">Internet</data>
+      <data key="d1">internet</data>
+    </node>
+    <node id="H04:vpn">
+      <data key="d0">H04:VPN session</data>
+      <data key="d1">dmz</data>
+    </node>
+    <edge source="H01:user" target="H05:root" id="H01:user:H05:CVE-2011-2523">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2011-2523</data>
+      <data key="d4">21</data>
+      <data key="d5">Backdoored vsftpd distribution must actually be installed</data>
+      <data key="d6">0.13</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H01:user; service ftp/21 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H05</data>
+    </edge>
+    <edge source="H01:user" target="H17:user" id="H01:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H01:user; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H01:root" target="H05:root" id="H01:root:H05:CVE-2011-2523">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2011-2523</data>
+      <data key="d4">21</data>
+      <data key="d5">Backdoored vsftpd distribution must actually be installed</data>
+      <data key="d6">0.13</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H01:root; service ftp/21 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H05</data>
+    </edge>
+    <edge source="H01:root" target="H17:user" id="H01:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H01:root; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H02:user" target="H05:root" id="H02:user:H05:CVE-2011-2523">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2011-2523</data>
+      <data key="d4">21</data>
+      <data key="d5">Backdoored vsftpd distribution must actually be installed</data>
+      <data key="d6">0.13</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H02:user; service ftp/21 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H05</data>
+    </edge>
+    <edge source="H02:root" target="H05:root" id="H02:root:H05:CVE-2011-2523">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2011-2523</data>
+      <data key="d4">21</data>
+      <data key="d5">Backdoored vsftpd distribution must actually be installed</data>
+      <data key="d6">0.13</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H02:root; service ftp/21 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H05</data>
+    </edge>
+    <edge source="H03:user" target="H05:root" id="H03:user:H05:CVE-2011-2523">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2011-2523</data>
+      <data key="d4">21</data>
+      <data key="d5">Backdoored vsftpd distribution must actually be installed</data>
+      <data key="d6">0.13</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H03:user; service ftp/21 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H05</data>
+    </edge>
+    <edge source="H03:root" target="H05:root" id="H03:root:H05:CVE-2011-2523">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2011-2523</data>
+      <data key="d4">21</data>
+      <data key="d5">Backdoored vsftpd distribution must actually be installed</data>
+      <data key="d6">0.13</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H03:root; service ftp/21 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H05</data>
+    </edge>
+    <edge source="H04:user" target="H05:root" id="H04:user:H05:CVE-2011-2523">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2011-2523</data>
+      <data key="d4">21</data>
+      <data key="d5">Backdoored vsftpd distribution must actually be installed</data>
+      <data key="d6">0.13</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H04:user; service ftp/21 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H05</data>
+    </edge>
+    <edge source="H04:user" target="H07:root" id="H04:user:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H04:user; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H04:user" target="H08:root" id="H04:user:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H04:user; service rdp/3389 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H04:root" target="H05:root" id="H04:root:H05:CVE-2011-2523">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2011-2523</data>
+      <data key="d4">21</data>
+      <data key="d5">Backdoored vsftpd distribution must actually be installed</data>
+      <data key="d6">0.13</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H04:root; service ftp/21 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H05</data>
+    </edge>
+    <edge source="H04:root" target="H07:root" id="H04:root:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H04:root; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H04:root" target="H08:root" id="H04:root:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H04:root; service rdp/3389 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H06:user" target="H05:root" id="H06:user:H05:CVE-2011-2523">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2011-2523</data>
+      <data key="d4">21</data>
+      <data key="d5">Backdoored vsftpd distribution must actually be installed</data>
+      <data key="d6">0.13</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H06:user; service ftp/21 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H05</data>
+    </edge>
+    <edge source="H06:user" target="H15:user" id="H06:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H06:user; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H06:root" target="H05:root" id="H06:root:H05:CVE-2011-2523">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2011-2523</data>
+      <data key="d4">21</data>
+      <data key="d5">Backdoored vsftpd distribution must actually be installed</data>
+      <data key="d6">0.13</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H06:root; service ftp/21 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H05</data>
+    </edge>
+    <edge source="H06:root" target="H15:user" id="H06:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H06:root; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H07:user" target="H08:root" id="H07:user:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H07:user; service rdp/3389 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H07:user" target="H14:user" id="H07:user:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H07:user; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H07:user" target="H15:user" id="H07:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H07:user; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H07:user" target="H16:user" id="H07:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H07:user; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H07:user" target="H17:user" id="H07:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H07:user; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H07:user" target="H12:user" id="H07:user:MC1">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC1</data>
+      <data key="d4">80</data>
+      <data key="d5">Factory password still valid; printer control is not access to another host</data>
+      <data key="d6">0.32</data>
+      <data key="d7">1</data>
+      <data key="d8">HTTP UI reachable (assumed-intra-zone-allow); default credentials work</data>
+      <data key="d9">user access on H12</data>
+    </edge>
+    <edge source="H07:user" target="H26:user" id="H07:user:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (explicit-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H07:root" target="H08:root" id="H07:root:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H07:root; service rdp/3389 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H07:root" target="H14:user" id="H07:root:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H07:root; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H07:root" target="H15:user" id="H07:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H07:root; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H07:root" target="H16:user" id="H07:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H07:root; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H07:root" target="H17:user" id="H07:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H07:root; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H07:root" target="H12:user" id="H07:root:MC1">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC1</data>
+      <data key="d4">80</data>
+      <data key="d5">Factory password still valid; printer control is not access to another host</data>
+      <data key="d6">0.32</data>
+      <data key="d7">1</data>
+      <data key="d8">HTTP UI reachable (assumed-intra-zone-allow); default credentials work</data>
+      <data key="d9">user access on H12</data>
+    </edge>
+    <edge source="H07:root" target="H26:user" id="H07:root:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (explicit-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H08:user" target="H07:root" id="H08:user:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H08:user; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H08:user" target="H14:user" id="H08:user:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H08:user; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H08:user" target="H15:user" id="H08:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H08:user; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H08:user" target="H16:user" id="H08:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H08:user; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H08:user" target="H17:user" id="H08:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H08:user; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H08:user" target="H12:user" id="H08:user:MC1">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC1</data>
+      <data key="d4">80</data>
+      <data key="d5">Factory password still valid; printer control is not access to another host</data>
+      <data key="d6">0.32</data>
+      <data key="d7">1</data>
+      <data key="d8">HTTP UI reachable (assumed-intra-zone-allow); default credentials work</data>
+      <data key="d9">user access on H12</data>
+    </edge>
+    <edge source="H08:user" target="H26:user" id="H08:user:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (explicit-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H08:root" target="H07:root" id="H08:root:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H08:root; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H08:root" target="H14:user" id="H08:root:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H08:root; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H08:root" target="H15:user" id="H08:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H08:root; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H08:root" target="H16:user" id="H08:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H08:root; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H08:root" target="H17:user" id="H08:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H08:root; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H08:root" target="H12:user" id="H08:root:MC1">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC1</data>
+      <data key="d4">80</data>
+      <data key="d5">Factory password still valid; printer control is not access to another host</data>
+      <data key="d6">0.32</data>
+      <data key="d7">1</data>
+      <data key="d8">HTTP UI reachable (assumed-intra-zone-allow); default credentials work</data>
+      <data key="d9">user access on H12</data>
+    </edge>
+    <edge source="H08:root" target="H26:user" id="H08:root:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (explicit-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H09:user" target="H07:root" id="H09:user:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H09:user; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H09:user" target="H08:root" id="H09:user:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H09:user; service rdp/3389 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H09:user" target="H09:root" id="H09:CVE-2021-4034:local">
+      <data key="d2">local-cve</data>
+      <data key="d3">CVE-2021-4034</data>
+      <data key="d4">0</data>
+      <data key="d5">Local polkit privilege escalation; requires user shell</data>
+      <data key="d6">0.55</data>
+      <data key="d7">2</data>
+      <data key="d8">user shell on target</data>
+      <data key="d9">root shell on same host</data>
+    </edge>
+    <edge source="H09:user" target="H14:user" id="H09:user:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H09:user; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H09:user" target="H15:user" id="H09:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H09:user; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H09:user" target="H16:user" id="H09:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H09:user; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H09:user" target="H17:user" id="H09:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H09:user; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H09:user" target="H12:user" id="H09:user:MC1">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC1</data>
+      <data key="d4">80</data>
+      <data key="d5">Factory password still valid; printer control is not access to another host</data>
+      <data key="d6">0.32</data>
+      <data key="d7">1</data>
+      <data key="d8">HTTP UI reachable (assumed-intra-zone-allow); default credentials work</data>
+      <data key="d9">user access on H12</data>
+    </edge>
+    <edge source="H09:user" target="H26:user" id="H09:user:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (explicit-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H09:root" target="H07:root" id="H09:root:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H09:root; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H09:root" target="H08:root" id="H09:root:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H09:root; service rdp/3389 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H09:root" target="H14:user" id="H09:root:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H09:root; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H09:root" target="H15:user" id="H09:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H09:root; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H09:root" target="H16:user" id="H09:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H09:root; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H09:root" target="H17:user" id="H09:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H09:root; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H09:root" target="H12:user" id="H09:root:MC1">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC1</data>
+      <data key="d4">80</data>
+      <data key="d5">Factory password still valid; printer control is not access to another host</data>
+      <data key="d6">0.32</data>
+      <data key="d7">1</data>
+      <data key="d8">HTTP UI reachable (assumed-intra-zone-allow); default credentials work</data>
+      <data key="d9">user access on H12</data>
+    </edge>
+    <edge source="H09:root" target="H26:user" id="H09:root:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (explicit-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H10:user" target="H07:root" id="H10:user:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H10:user; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H10:user" target="H08:root" id="H10:user:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H10:user; service rdp/3389 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H10:user" target="H14:user" id="H10:user:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H10:user; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H10:user" target="H15:user" id="H10:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H10:user; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H10:user" target="H16:user" id="H10:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H10:user; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H10:user" target="H17:user" id="H10:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H10:user; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H10:user" target="H12:user" id="H10:user:MC1">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC1</data>
+      <data key="d4">80</data>
+      <data key="d5">Factory password still valid; printer control is not access to another host</data>
+      <data key="d6">0.32</data>
+      <data key="d7">1</data>
+      <data key="d8">HTTP UI reachable (assumed-intra-zone-allow); default credentials work</data>
+      <data key="d9">user access on H12</data>
+    </edge>
+    <edge source="H10:user" target="H26:user" id="H10:user:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (explicit-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H10:root" target="H07:root" id="H10:root:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H10:root; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H10:root" target="H08:root" id="H10:root:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H10:root; service rdp/3389 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H10:root" target="H14:user" id="H10:root:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H10:root; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H10:root" target="H15:user" id="H10:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H10:root; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H10:root" target="H16:user" id="H10:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H10:root; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H10:root" target="H17:user" id="H10:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H10:root; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H10:root" target="H12:user" id="H10:root:MC1">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC1</data>
+      <data key="d4">80</data>
+      <data key="d5">Factory password still valid; printer control is not access to another host</data>
+      <data key="d6">0.32</data>
+      <data key="d7">1</data>
+      <data key="d8">HTTP UI reachable (assumed-intra-zone-allow); default credentials work</data>
+      <data key="d9">user access on H12</data>
+    </edge>
+    <edge source="H10:root" target="H26:user" id="H10:root:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (explicit-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H11:user" target="H07:root" id="H11:user:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H11:user; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H11:user" target="H08:root" id="H11:user:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H11:user; service rdp/3389 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H11:user" target="H11:root" id="H11:CVE-2021-3156:local">
+      <data key="d2">local-cve</data>
+      <data key="d3">CVE-2021-3156</data>
+      <data key="d4">0</data>
+      <data key="d5">Local sudo privilege escalation; requires user shell</data>
+      <data key="d6">0.5</data>
+      <data key="d7">2</data>
+      <data key="d8">user shell on target</data>
+      <data key="d9">root shell on same host</data>
+    </edge>
+    <edge source="H11:user" target="H14:user" id="H11:user:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H11:user; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H11:user" target="H15:user" id="H11:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H11:user; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H11:user" target="H16:user" id="H11:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H11:user; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H11:user" target="H17:user" id="H11:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H11:user; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H11:user" target="H12:user" id="H11:user:MC1">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC1</data>
+      <data key="d4">80</data>
+      <data key="d5">Factory password still valid; printer control is not access to another host</data>
+      <data key="d6">0.32</data>
+      <data key="d7">1</data>
+      <data key="d8">HTTP UI reachable (assumed-intra-zone-allow); default credentials work</data>
+      <data key="d9">user access on H12</data>
+    </edge>
+    <edge source="H11:user" target="H26:user" id="H11:user:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (explicit-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H11:root" target="H07:root" id="H11:root:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H11:root; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H11:root" target="H08:root" id="H11:root:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H11:root; service rdp/3389 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H11:root" target="H14:user" id="H11:root:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H11:root; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H11:root" target="H15:user" id="H11:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H11:root; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H11:root" target="H16:user" id="H11:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H11:root; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H11:root" target="H17:user" id="H11:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H11:root; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H11:root" target="H12:user" id="H11:root:MC1">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC1</data>
+      <data key="d4">80</data>
+      <data key="d5">Factory password still valid; printer control is not access to another host</data>
+      <data key="d6">0.32</data>
+      <data key="d7">1</data>
+      <data key="d8">HTTP UI reachable (assumed-intra-zone-allow); default credentials work</data>
+      <data key="d9">user access on H12</data>
+    </edge>
+    <edge source="H11:root" target="H26:user" id="H11:root:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (explicit-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H11:root" target="H13:root" id="T6:root">
+      <data key="d2">trust</data>
+      <data key="d3">T6</data>
+      <data key="d4">445</data>
+      <data key="d5">Credential on source remains valid; administrative auth works</data>
+      <data key="d6">0.7</data>
+      <data key="d7">2</data>
+      <data key="d8">H11:root, valid cached-domain-admin-credentials; reachable H13/445 (explicit-allow)</data>
+      <data key="d9">root on H13 per JSON trust semantics</data>
+    </edge>
+    <edge source="H12:user" target="H07:root" id="H12:user:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H12:user; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H12:user" target="H08:root" id="H12:user:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H12:user; service rdp/3389 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H12:user" target="H14:user" id="H12:user:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H12:user; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H12:user" target="H15:user" id="H12:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H12:user; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H12:user" target="H16:user" id="H12:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H12:user; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H12:user" target="H17:user" id="H12:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H12:user; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H12:user" target="H26:user" id="H12:user:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (explicit-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H12:root" target="H07:root" id="H12:root:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H12:root; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H12:root" target="H08:root" id="H12:root:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H12:root; service rdp/3389 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H12:root" target="H14:user" id="H12:root:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H12:root; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H12:root" target="H15:user" id="H12:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H12:root; service http/8090 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H12:root" target="H16:user" id="H12:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H12:root; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H12:root" target="H17:user" id="H12:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H12:root; service http/8080 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H12:root" target="H26:user" id="H12:root:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (explicit-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H13:user" target="H08:root" id="H13:user:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H13:user; service rdp/3389 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H13:user" target="H14:user" id="H13:user:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H13:user; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H13:user" target="H15:user" id="H13:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H13:user; service http/8090 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H13:user" target="H16:user" id="H13:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H13:user; service https/443 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H13:user" target="H17:user" id="H13:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H13:user; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H13:user" target="H19:user" id="H13:user:H19:CVE-2021-44228">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-44228</data>
+      <data key="d4">5044</data>
+      <data key="d5">Log4Shell requires attacker-controlled data reaching the vulnerable logger</data>
+      <data key="d6">0.16</data>
+      <data key="d7">5</data>
+      <data key="d8">vantage H13:user; service logstash/5044 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H19</data>
+    </edge>
+    <edge source="H13:root" target="H08:root" id="H13:root:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H13:root; service rdp/3389 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H13:root" target="H14:user" id="H13:root:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H13:root; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H13:root" target="H15:user" id="H13:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H13:root; service http/8090 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H13:root" target="H16:user" id="H13:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H13:root; service https/443 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H13:root" target="H17:user" id="H13:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H13:root; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H13:root" target="H19:user" id="H13:root:H19:CVE-2021-44228">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-44228</data>
+      <data key="d4">5044</data>
+      <data key="d5">Log4Shell requires attacker-controlled data reaching the vulnerable logger</data>
+      <data key="d6">0.16</data>
+      <data key="d7">5</data>
+      <data key="d8">vantage H13:root; service logstash/5044 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H19</data>
+    </edge>
+    <edge source="H13:root" target="H14:root" id="T7:root">
+      <data key="d2">trust</data>
+      <data key="d3">T7</data>
+      <data key="d4">445</data>
+      <data key="d5">Credential on source remains valid; administrative auth works</data>
+      <data key="d6">0.7</data>
+      <data key="d7">2</data>
+      <data key="d8">H13:root, valid domain-admin; reachable H14/445 (assumed-intra-zone-allow)</data>
+      <data key="d9">root on H14 per JSON trust semantics</data>
+    </edge>
+    <edge source="H14:user" target="H15:user" id="H14:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H14:user; service http/8090 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H14:user" target="H16:user" id="H14:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H14:user; service https/443 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H14:user" target="H17:user" id="H14:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H14:user; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H14:user" target="H19:user" id="H14:user:H19:CVE-2021-44228">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-44228</data>
+      <data key="d4">5044</data>
+      <data key="d5">Log4Shell requires attacker-controlled data reaching the vulnerable logger</data>
+      <data key="d6">0.16</data>
+      <data key="d7">5</data>
+      <data key="d8">vantage H14:user; service logstash/5044 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H19</data>
+    </edge>
+    <edge source="H14:root" target="H15:user" id="H14:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H14:root; service http/8090 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H14:root" target="H16:user" id="H14:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H14:root; service https/443 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H14:root" target="H17:user" id="H14:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H14:root; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H14:root" target="H19:user" id="H14:root:H19:CVE-2021-44228">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-44228</data>
+      <data key="d4">5044</data>
+      <data key="d5">Log4Shell requires attacker-controlled data reaching the vulnerable logger</data>
+      <data key="d6">0.16</data>
+      <data key="d7">5</data>
+      <data key="d8">vantage H14:root; service logstash/5044 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H19</data>
+    </edge>
+    <edge source="H15:user" target="H14:user" id="H15:user:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H15:user; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H15:user" target="H16:user" id="H15:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H15:user; service https/443 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H15:user" target="H17:user" id="H15:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H15:user; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H15:user" target="H19:user" id="H15:user:H19:CVE-2021-44228">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-44228</data>
+      <data key="d4">5044</data>
+      <data key="d5">Log4Shell requires attacker-controlled data reaching the vulnerable logger</data>
+      <data key="d6">0.16</data>
+      <data key="d7">5</data>
+      <data key="d8">vantage H15:user; service logstash/5044 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H19</data>
+    </edge>
+    <edge source="H15:root" target="H14:user" id="H15:root:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H15:root; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H15:root" target="H16:user" id="H15:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H15:root; service https/443 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H15:root" target="H17:user" id="H15:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H15:root; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H15:root" target="H19:user" id="H15:root:H19:CVE-2021-44228">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-44228</data>
+      <data key="d4">5044</data>
+      <data key="d5">Log4Shell requires attacker-controlled data reaching the vulnerable logger</data>
+      <data key="d6">0.16</data>
+      <data key="d7">5</data>
+      <data key="d8">vantage H15:root; service logstash/5044 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H19</data>
+    </edge>
+    <edge source="H16:user" target="H14:user" id="H16:user:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H16:user; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H16:user" target="H15:user" id="H16:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H16:user; service http/8090 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H16:user" target="H17:user" id="H16:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H16:user; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H16:user" target="H19:user" id="H16:user:H19:CVE-2021-44228">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-44228</data>
+      <data key="d4">5044</data>
+      <data key="d5">Log4Shell requires attacker-controlled data reaching the vulnerable logger</data>
+      <data key="d6">0.16</data>
+      <data key="d7">5</data>
+      <data key="d8">vantage H16:user; service logstash/5044 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H19</data>
+    </edge>
+    <edge source="H16:root" target="H14:user" id="H16:root:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H16:root; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H16:root" target="H15:user" id="H16:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H16:root; service http/8090 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H16:root" target="H17:user" id="H16:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H16:root; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H16:root" target="H19:user" id="H16:root:H19:CVE-2021-44228">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-44228</data>
+      <data key="d4">5044</data>
+      <data key="d5">Log4Shell requires attacker-controlled data reaching the vulnerable logger</data>
+      <data key="d6">0.16</data>
+      <data key="d7">5</data>
+      <data key="d8">vantage H16:root; service logstash/5044 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H19</data>
+    </edge>
+    <edge source="H17:user" target="H14:user" id="H17:user:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H17:user; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H17:user" target="H15:user" id="H17:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H17:user; service http/8090 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H17:user" target="H16:user" id="H17:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H17:user; service https/443 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H17:user" target="H19:user" id="H17:user:H19:CVE-2021-44228">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-44228</data>
+      <data key="d4">5044</data>
+      <data key="d5">Log4Shell requires attacker-controlled data reaching the vulnerable logger</data>
+      <data key="d6">0.16</data>
+      <data key="d7">5</data>
+      <data key="d8">vantage H17:user; service logstash/5044 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H19</data>
+    </edge>
+    <edge source="H17:root" target="H14:user" id="H17:root:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H17:root; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H17:root" target="H15:user" id="H17:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H17:root; service http/8090 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H17:root" target="H16:user" id="H17:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H17:root; service https/443 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H17:root" target="H19:user" id="H17:root:H19:CVE-2021-44228">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-44228</data>
+      <data key="d4">5044</data>
+      <data key="d5">Log4Shell requires attacker-controlled data reaching the vulnerable logger</data>
+      <data key="d6">0.16</data>
+      <data key="d7">5</data>
+      <data key="d8">vantage H17:root; service logstash/5044 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H19</data>
+    </edge>
+    <edge source="H18:user" target="H14:user" id="H18:user:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H18:user; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H18:user" target="H15:user" id="H18:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H18:user; service http/8090 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H18:user" target="H16:user" id="H18:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H18:user; service https/443 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H18:user" target="H17:user" id="H18:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H18:user; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H18:user" target="H18:root" id="H18:CVE-2022-0847:local">
+      <data key="d2">local-cve</data>
+      <data key="d3">CVE-2022-0847</data>
+      <data key="d4">0</data>
+      <data key="d5">Local Dirty Pipe; requires user shell</data>
+      <data key="d6">0.52</data>
+      <data key="d7">2</data>
+      <data key="d8">user shell on target</data>
+      <data key="d9">root shell on same host</data>
+    </edge>
+    <edge source="H18:user" target="H19:user" id="H18:user:H19:CVE-2021-44228">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-44228</data>
+      <data key="d4">5044</data>
+      <data key="d5">Log4Shell requires attacker-controlled data reaching the vulnerable logger</data>
+      <data key="d6">0.16</data>
+      <data key="d7">5</data>
+      <data key="d8">vantage H18:user; service logstash/5044 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H19</data>
+    </edge>
+    <edge source="H18:root" target="H14:user" id="H18:root:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H18:root; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H18:root" target="H15:user" id="H18:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H18:root; service http/8090 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H18:root" target="H16:user" id="H18:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H18:root; service https/443 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H18:root" target="H17:user" id="H18:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H18:root; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H18:root" target="H19:user" id="H18:root:H19:CVE-2021-44228">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-44228</data>
+      <data key="d4">5044</data>
+      <data key="d5">Log4Shell requires attacker-controlled data reaching the vulnerable logger</data>
+      <data key="d6">0.16</data>
+      <data key="d7">5</data>
+      <data key="d8">vantage H18:root; service logstash/5044 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H19</data>
+    </edge>
+    <edge source="H19:user" target="H14:user" id="H19:user:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H19:user; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H19:user" target="H15:user" id="H19:user:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H19:user; service http/8090 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H19:user" target="H16:user" id="H19:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H19:user; service https/443 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H19:user" target="H17:user" id="H19:user:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H19:user; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H19:root" target="H14:user" id="H19:root:H14:CVE-2017-7494">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-7494</data>
+      <data key="d4">445</data>
+      <data key="d5">Samba RCE conditional on writable share; *unverified*</data>
+      <data key="d6">0.19</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H19:root; service smb/445 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H14</data>
+    </edge>
+    <edge source="H19:root" target="H15:user" id="H19:root:H15:CVE-2022-26134">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-26134</data>
+      <data key="d4">8090</data>
+      <data key="d5">Confluence unauthenticated RCE; configuration-dependent</data>
+      <data key="d6">0.32</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H19:root; service http/8090 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H15</data>
+    </edge>
+    <edge source="H19:root" target="H16:user" id="H19:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H19:root; service https/443 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H19:root" target="H17:user" id="H19:root:H17:CVE-2017-5638">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-5638</data>
+      <data key="d4">8080</data>
+      <data key="d5">Struts RCE requires vulnerable endpoint reached</data>
+      <data key="d6">0.36</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H19:root; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H17</data>
+    </edge>
+    <edge source="H20:user" target="H20:root" id="H20:CVE-2016-5195:local">
+      <data key="d2">local-cve</data>
+      <data key="d3">CVE-2016-5195</data>
+      <data key="d4">0</data>
+      <data key="d5">Local Dirty COW; requires user shell</data>
+      <data key="d6">0.45</data>
+      <data key="d7">3</data>
+      <data key="d8">user shell on target</data>
+      <data key="d9">root shell on same host</data>
+    </edge>
+    <edge source="H21:user" target="H21:root" id="H21:CVE-2021-4034:local">
+      <data key="d2">local-cve</data>
+      <data key="d3">CVE-2021-4034</data>
+      <data key="d4">0</data>
+      <data key="d5">Local polkit privilege escalation; requires user shell</data>
+      <data key="d6">0.55</data>
+      <data key="d7">2</data>
+      <data key="d8">user shell on target</data>
+      <data key="d9">root shell on same host</data>
+    </edge>
+    <edge source="H23:user" target="H16:user" id="H23:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H23:user; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H23:user" target="H24:user" id="H23:user:H24:CVE-2018-7600">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2018-7600</data>
+      <data key="d4">80</data>
+      <data key="d5">Drupal RCE; patch/configuration prerequisites assumed</data>
+      <data key="d6">0.32</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H23:user; service http/80 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H24</data>
+    </edge>
+    <edge source="H23:root" target="H16:user" id="H23:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H23:root; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H23:root" target="H24:user" id="H23:root:H24:CVE-2018-7600">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2018-7600</data>
+      <data key="d4">80</data>
+      <data key="d5">Drupal RCE; patch/configuration prerequisites assumed</data>
+      <data key="d6">0.32</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H23:root; service http/80 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H24</data>
+    </edge>
+    <edge source="H24:user" target="H16:user" id="H24:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H24:user; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H24:user" target="H23:user" id="H24:user:H23:CVE-2022-22965">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-22965</data>
+      <data key="d4">8080</data>
+      <data key="d5">Spring4Shell requires deployment/JDK prerequisites not proven by version</data>
+      <data key="d6">0.17</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H24:user; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H23</data>
+    </edge>
+    <edge source="H24:root" target="H16:user" id="H24:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H24:root; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H24:root" target="H23:user" id="H24:root:H23:CVE-2022-22965">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-22965</data>
+      <data key="d4">8080</data>
+      <data key="d5">Spring4Shell requires deployment/JDK prerequisites not proven by version</data>
+      <data key="d6">0.17</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H24:root; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H23</data>
+    </edge>
+    <edge source="H25:user" target="H16:user" id="H25:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H25:user; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H25:user" target="H16:user" id="T5:user">
+      <data key="d2">trust</data>
+      <data key="d3">T5</data>
+      <data key="d4">443</data>
+      <data key="d5">Credential on source remains valid; administrative auth works</data>
+      <data key="d6">0.7</data>
+      <data key="d7">2</data>
+      <data key="d8">H25:user, valid runner-token; reachable H16/443 (explicit-allow)</data>
+      <data key="d9">user on H16 per JSON trust semantics</data>
+    </edge>
+    <edge source="H25:user" target="H23:user" id="H25:user:H23:CVE-2022-22965">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-22965</data>
+      <data key="d4">8080</data>
+      <data key="d5">Spring4Shell requires deployment/JDK prerequisites not proven by version</data>
+      <data key="d6">0.17</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H25:user; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H23</data>
+    </edge>
+    <edge source="H25:user" target="H24:user" id="H25:user:H24:CVE-2018-7600">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2018-7600</data>
+      <data key="d4">80</data>
+      <data key="d5">Drupal RCE; patch/configuration prerequisites assumed</data>
+      <data key="d6">0.32</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H25:user; service http/80 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H24</data>
+    </edge>
+    <edge source="H25:user" target="H25:root" id="H25:CVE-2021-3156:local">
+      <data key="d2">local-cve</data>
+      <data key="d3">CVE-2021-3156</data>
+      <data key="d4">0</data>
+      <data key="d5">Local sudo privilege escalation; requires user shell</data>
+      <data key="d6">0.5</data>
+      <data key="d7">2</data>
+      <data key="d8">user shell on target</data>
+      <data key="d9">root shell on same host</data>
+    </edge>
+    <edge source="H25:root" target="H16:user" id="H25:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H25:root; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H25:root" target="H16:user" id="T5:root">
+      <data key="d2">trust</data>
+      <data key="d3">T5</data>
+      <data key="d4">443</data>
+      <data key="d5">Credential on source remains valid; administrative auth works</data>
+      <data key="d6">0.7</data>
+      <data key="d7">2</data>
+      <data key="d8">H25:root, valid runner-token; reachable H16/443 (explicit-allow)</data>
+      <data key="d9">user on H16 per JSON trust semantics</data>
+    </edge>
+    <edge source="H25:root" target="H23:user" id="H25:root:H23:CVE-2022-22965">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2022-22965</data>
+      <data key="d4">8080</data>
+      <data key="d5">Spring4Shell requires deployment/JDK prerequisites not proven by version</data>
+      <data key="d6">0.17</data>
+      <data key="d7">4</data>
+      <data key="d8">vantage H25:root; service http/8080 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H23</data>
+    </edge>
+    <edge source="H25:root" target="H24:user" id="H25:root:H24:CVE-2018-7600">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2018-7600</data>
+      <data key="d4">80</data>
+      <data key="d5">Drupal RCE; patch/configuration prerequisites assumed</data>
+      <data key="d6">0.32</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H25:root; service http/80 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">user shell on H24</data>
+    </edge>
+    <edge source="H26:user" target="H07:root" id="H26:user:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H26:user; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H26:user" target="H08:root" id="H26:user:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H26:user; service rdp/3389 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H26:user" target="H16:user" id="H26:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H26:user; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H26:user" target="H18:user" id="T1:user">
+      <data key="d2">trust</data>
+      <data key="d3">T1</data>
+      <data key="d4">22</data>
+      <data key="d5">Credential on source remains valid; administrative auth works</data>
+      <data key="d6">0.7</data>
+      <data key="d7">2</data>
+      <data key="d8">H26:user, valid ssh-key; reachable H18/22 (explicit-allow)</data>
+      <data key="d9">user on H18 per JSON trust semantics</data>
+    </edge>
+    <edge source="H26:root" target="H07:root" id="H26:root:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H26:root; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H26:root" target="H08:root" id="H26:root:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H26:root; service rdp/3389 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H26:root" target="H16:user" id="H26:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H26:root; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H26:root" target="H18:user" id="T1:root">
+      <data key="d2">trust</data>
+      <data key="d3">T1</data>
+      <data key="d4">22</data>
+      <data key="d5">Credential on source remains valid; administrative auth works</data>
+      <data key="d6">0.7</data>
+      <data key="d7">2</data>
+      <data key="d8">H26:root, valid ssh-key; reachable H18/22 (explicit-allow)</data>
+      <data key="d9">user on H18 per JSON trust semantics</data>
+    </edge>
+    <edge source="H27:user" target="H07:root" id="H27:user:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H27:user; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H27:user" target="H08:root" id="H27:user:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H27:user; service rdp/3389 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H27:user" target="H16:user" id="H27:user:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H27:user; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H27:user" target="H26:user" id="H27:user:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (assumed-intra-zone-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="H27:root" target="H07:root" id="H27:root:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H27:root; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H27:root" target="H08:root" id="H27:root:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H27:root; service rdp/3389 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+    <edge source="H27:root" target="H16:user" id="H27:root:H16:CVE-2021-22205">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2021-22205</data>
+      <data key="d4">443</data>
+      <data key="d5">GitLab image processing RCE on a vulnerable deployment</data>
+      <data key="d6">0.28</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H27:root; service https/443 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">user shell on H16</data>
+    </edge>
+    <edge source="H27:root" target="H26:user" id="H27:root:MC2">
+      <data key="d2">misconfiguration</data>
+      <data key="d3">MC2</data>
+      <data key="d4">22</data>
+      <data key="d5">Guessable existing SSH password and no lockout required; low success prior</data>
+      <data key="d6">0.08</data>
+      <data key="d7">12</data>
+      <data key="d8">port 22 reachable (assumed-intra-zone-allow); guessable password</data>
+      <data key="d9">user shell on jump host</data>
+    </edge>
+    <edge source="INTERNET:none" target="H05:root" id="INTERNET:none:H05:CVE-2011-2523">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2011-2523</data>
+      <data key="d4">21</data>
+      <data key="d5">Backdoored vsftpd distribution must actually be installed</data>
+      <data key="d6">0.13</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage INTERNET:none; service ftp/21 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H05</data>
+    </edge>
+    <edge source="INTERNET:none" target="H04:vpn" id="H04:VPN-CVE-2019-11510">
+      <data key="d2">credential-conditional</data>
+      <data key="d3">CVE-2019-11510</data>
+      <data key="d4">443</data>
+      <data key="d5">Successful arbitrary-file-read PLUS extraction of still-valid VPN credentials PLUS login; not a shell on H04</data>
+      <data key="d6">0.12</data>
+      <data key="d7">6</data>
+      <data key="d8">Internet can reach H04/443 and usable VPN credentials are disclosed and accepted</data>
+      <data key="d9">Authenticated VPN network session (not OS access)</data>
+    </edge>
+    <edge source="H04:vpn" target="H05:root" id="H04:vpn:H05:CVE-2011-2523">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2011-2523</data>
+      <data key="d4">21</data>
+      <data key="d5">Backdoored vsftpd distribution must actually be installed</data>
+      <data key="d6">0.13</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H04:vpn; service ftp/21 reachable (assumed-intra-zone-allow); conditions noted</data>
+      <data key="d9">root shell on H05</data>
+    </edge>
+    <edge source="H04:vpn" target="H07:root" id="H04:vpn:H07:CVE-2017-0144">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2017-0144</data>
+      <data key="d4">445</data>
+      <data key="d5">SMBv1 RCE; payload and target configuration conditional</data>
+      <data key="d6">0.3</data>
+      <data key="d7">2</data>
+      <data key="d8">vantage H04:vpn; service smb/445 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H07</data>
+    </edge>
+    <edge source="H04:vpn" target="H08:root" id="H04:vpn:H08:CVE-2019-0708">
+      <data key="d2">remote-cve</data>
+      <data key="d3">CVE-2019-0708</data>
+      <data key="d4">3389</data>
+      <data key="d5">RDP RCE; target service configuration conditional</data>
+      <data key="d6">0.19</data>
+      <data key="d7">3</data>
+      <data key="d8">vantage H04:vpn; service rdp/3389 reachable (explicit-allow); conditions noted</data>
+      <data key="d9">root shell on H08</data>
+    </edge>
+  </graph>
+</graphml>

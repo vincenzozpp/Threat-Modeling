@@ -1,0 +1,64 @@
+{
+  "company": "ACME Retail Ltd - hw network",
+  "zones": {
+    "internet": [],
+    "dmz": [
+      "H01",
+      "H02",
+      "H03",
+      "H04",
+      "H05",
+      "H06"
+    ],
+    "corp-lan": [
+      "H07",
+      "H08",
+      "H09",
+      "H10",
+      "H11",
+      "H12"
+    ],
+    "server-lan": [
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "H17",
+      "H18",
+      "H19"
+    ],
+    "dev-lan": [
+      "H23",
+      "H24",
+      "H25"
+    ],
+    "db-zone": [
+      "H20",
+      "H21",
+      "H22"
+    ],
+    "mgmt": [
+      "H26",
+      "H27"
+    ]
+  },
+  "hosts": 27,
+  "services": 37,
+  "cve_occurrences": 24,
+  "distinct_cves": 22,
+  "misconfigurations": 2,
+  "firewall_rules": 28,
+  "trust_relations": 9,
+  "data_flows": 10,
+  "attacker_scenarios": 2,
+  "goals": 3,
+  "mitigations": 18,
+  "total_mitigation_cost": 246700,
+  "same_zone_policy": "allow",
+  "reachable_service_edges": 284,
+  "reachable_host_pairs": 233,
+  "flow_checks": {
+    "REACHABLE": 7,
+    "MISSING_DECLARED_SERVICE": 3
+  }
+}

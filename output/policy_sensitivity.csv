@@ -1,0 +1,3 @@
+same_zone_policy,reachable_host_pairs,reachable_service_edges,data_flows_consistent,data_flows_missing_service
+allow,233,284,7,3
+deny,128,157,7,3

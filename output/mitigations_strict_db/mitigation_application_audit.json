@@ -1,0 +1,55 @@
+{
+  "Baseline": [],
+  "Greedy 30%": [
+    {
+      "id": "M07",
+      "type": "patch",
+      "cost": 3000,
+      "removed_host_cves": [
+        [
+          "H13",
+          "CVE-2020-1472"
+        ]
+      ]
+    }
+  ],
+  "Exact 30%": [
+    {
+      "id": "M07",
+      "type": "patch",
+      "cost": 3000,
+      "removed_host_cves": [
+        [
+          "H13",
+          "CVE-2020-1472"
+        ]
+      ]
+    }
+  ],
+  "Greedy 60%": [
+    {
+      "id": "M07",
+      "type": "patch",
+      "cost": 3000,
+      "removed_host_cves": [
+        [
+          "H13",
+          "CVE-2020-1472"
+        ]
+      ]
+    }
+  ],
+  "Exact 60%": [
+    {
+      "id": "M07",
+      "type": "patch",
+      "cost": 3000,
+      "removed_host_cves": [
+        [
+          "H13",
+          "CVE-2020-1472"
+        ]
+      ]
+    }
+  ]
+}
